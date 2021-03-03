@@ -11,12 +11,18 @@ redirect_from:
 
 Education
 ======
-* PhD	University of Florida   |   2018 – present
+* PhD	University of Florida, 2018 – present
     * Doctoral student of Zoology, Department of Biology. GPA 4.0.
     * Advisor: Hannah Vander Zanden
 
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* MS	University of Maryland Center for Environmental Science, 2018
+    * Appalachian Laboratory; Frostburg State University	 
+    * Applied Ecology and Quantitative Biology. GPA 4.0.
+    * Advisor: David M. Nelson 
+
+* BS	University of Vermont	2012
+    * Environmental Science: Conservation Biology and Biodiversity.
+    Honors Graduate
 
 Work experience
 ======
