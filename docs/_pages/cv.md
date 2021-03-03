@@ -11,7 +11,10 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
+* PhD	University of Florida   |   2018 – present
+    * Doctoral student of Zoology, Department of Biology. GPA 4.0.
+    * Advisor: Hannah Vander Zanden
+
 * M.S. in Jekyll, GitHub University, 2014
 * Ph.D in Version Control Theory, GitHub University, 2018 (expected)
 
