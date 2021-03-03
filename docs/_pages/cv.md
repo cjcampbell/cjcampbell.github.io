@@ -59,8 +59,8 @@ redirect_from:
     Release: https://CRAN.R-project.org/package=phenesse
     Development: https://github.com/mbelitz/phenesse
 
-Honors and Awards
-======
+### Honors and Awards
+
 * 2019	University of Florida Biodiversity Institute Summer Fellowship ($4,000)
 * 2019	Dr. Michael May Graduate Student Fellowship in Biology ($4,000)
 * 2018 – 2023	Graduate Student Funding Award Fellowship, Department of Biology, University of Florida ($120,000)
@@ -74,8 +74,7 @@ Honors and Awards
 * 2008 – 2012	Presidential Scholarship, University of Vermont ($10,500)
 * 2008	National Merit Scholar Commendation
 
-Research Experience
-=====
+### Research Experience
 
 **Graduate Research Assistant, July 2015 – August 2018**
 
@@ -188,8 +187,8 @@ Research Experience
 
 
 
-Talks
-======
+### Presentations
+
 * A framework for predicting migratory behavior and wind-development impacts: Uniting morphological and life-history characteristics with distribution-based migration models. Caitlin J. Campbell and Hannah Vander Zanden. Oral Presentation. December, 2020. 13th Wind Wildlife Research Meeting, online.
 * A review of cave and mine use by tree-roosting bats. Caitlin J. Campbell and Hannah Vander Zanden. Poster presentation. February, 2020. 25th Annual Meeting of the Southeastern Bat Diversity Network and 30th Annual Colloquium on the Conservation of Mammals in the Southeastern U.S., Athens, GA. 
 * Are some bats snowbirds?: Stable hydrogen isotopes to determine probable origins of wintering tri-colored bats in Florida caves. Lisa M. Smith, Terry J. Doonan, J. A. Gore, Caitlin J. Campbell. February, 2020. 25th Annual Meeting of the Southeastern Bat Diversity Network and 30th Annual Colloquium on the Conservation of Mammals in the Southeastern U.S., Athens, GA.
@@ -210,8 +209,8 @@ Talks
 * The odd couple: Indigenous group and international NGO cooperation creates a two-pronged approach to halt development of the Narmada River in India. Poster presentation, April 22, 2009. University of Vermont Student Research Conference, Burlington, VT.
 
   
-Teaching
-======
+### Teaching
+
 Assistant Instructor, Global Change Ecology and Sustainability, Spring 2019 – Fall 2020
 Department of Biology, University of Florida
 -	Assisted in administration and presentation of course centering on global-scale anthropogenic impacts on ecological systems. Objectives of this courses included: (1) discussion of climate change; biodiversity loss and species extinctions; invasive species; alterations to nitrogen, carbon, and phosphorous cycles; (2) comparison and critical analysis of management practices, mitigation schemes, and cultural and economic factors that can promote sustainability; and (3) apply ecological concepts to evaluate human impacts on global systems. 
@@ -222,8 +221,8 @@ Department of Biology, University of Florida
 Workshop Presenter, February 21, 2019.
 From Haircuts to Origin Models: A Guide to Emerging Tools to Study Animal Movement by Stable Isotope Analysis. Caitlin J. Campbell. Combined annual meeting of the Southeastern Bat Diversity Network (SBDN) and Annual Colloquium on the Conservation of Mammals in the Southeastern U.S.. https://github.com/cjcampbell/AnimalOrigins_SBDN/
 
-Instructor, X-Lab, Fall 2018
-Cross-Disciplinary Laboratory, University of Florida
+**Instructor, X-Lab, Fall 2018**
+*Cross-Disciplinary Laboratory, University of Florida*
 - Taught interdisciplinary 3-credit course integrating biology, chemistry, and physics laboratory coursework. Goals of this program included (1) increasing persistence in STEM through synthetic approach to natural sciences, (2) engage students in inquiry-based experiments modeled on authentic research practices, and (3) train students in key practical and theoretical research skills.
 
 Graduate Assistant Teaching Fellow, January 2016 – May 2016
@@ -231,8 +230,7 @@ Frostburg State University Department of Biology, Frostburg, MD
 -	Taught Anatomy and Physiology II Laboratory (BIOL 322); 2-credit 110 minute laboratory twice weekly. Structure and function of the human body, including the endocrine, circulatory, respiratory, digestive, excretory, and reproductive systems, and human development.
 -	Assisted with Anatomy and Physiology II Lecture section and administration.
 
-Service and Community Outreach
-=====
+### Service and Community Outreach
 
 ##### Manuscript reviews
 * Animal Migration (2020)
