@@ -8,3 +8,7 @@ venue: 'Animal Migration'
 paperurl: 'https://doi.org/10.1515/ami-2020-0004'
 citation: 'Campbell, C. J.; Fitzpatrick, M.C.; Vander Zanden, H.; Nelson, D. M. 2020. Refining assessment of geographic origins of animals inferred from stable isotope data. Animal Migration. doi: https://doi.org/10.1515/ami-2020-0004'
 ---
+
+Test text about this pub.
+
+Recommended citation: Campbell, C. J.; Fitzpatrick, M.C.; Vander Zanden, H.; Nelson, D. M. 2020. Refining assessment of geographic origins of animals inferred from stable isotope data. Animal Migration. doi: https://doi.org/10.1515/ami-2020-0004
