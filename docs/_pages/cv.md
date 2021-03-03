@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-Download CV <a href="cjcampbell.github.io/documents/CaitlinJCampbell_cv_2021_02.pdf" target="_blank">here.</a>
+Download CV <a href="documents/CaitlinJCampbell_cv_2021_02.pdf" target="_blank">here.</a>
 
 
 ### Education
