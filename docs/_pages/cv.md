@@ -9,8 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
+### Education
+
 * PhD	University of Florida, 2018 – present
     * Doctoral student of Zoology, Department of Biology. GPA 4.0.
     * Advisor: Hannah Vander Zanden
@@ -25,8 +25,7 @@ Education
     * Honors Graduate
 
 
-Publications
-======
+### Publications
 #### Peer-reviewed
 
 * **Campbell, C. J.**; Fitzpatrick, M.C.; Vander Zanden, H.; Nelson, D. M. 2020. Advancing interpretation of stable isotope assignment maps: comparing and summarizing origins of known-provenance migratory bats. Animal Migration. doi: https://doi.org/10.1515/ami-2020-0004
