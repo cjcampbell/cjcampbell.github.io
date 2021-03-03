@@ -22,24 +22,40 @@ Education
 
 * BS	University of Vermont	2012
     * Environmental Science: Conservation Biology and Biodiversity.
-    Honors Graduate
+    * Honors Graduate
 
 
 Publications
 ======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+#### Peer-reviewed
+
+* **Campbell, C. J.**; Fitzpatrick, M.C.; Vander Zanden, H.; Nelson, D. M. 2020. Advancing interpretation of stable isotope assignment maps: comparing and summarizing origins of known-provenance migratory bats. Animal Migration. doi: https://doi.org/10.1515/ami-2020-0004
+
+* Katzner, T. E.; Nelson, D. M.; Diffendorfer, J. E.; Duerr, A. E.; **Campbell, C. J.**; Leslie, D.; Vander Zanden, H. B., Yee, J. L., Sur, M., Huso, M.M.P., Braham, M.A., Morrison, M.L., Loss, S.R., Poessel, S.A., Conkling, T.J., Miller, T. A.. 2019. Wind energy: An ecological challenge. Science 366(6470):1206–1207. doi: 10.1126/science.aaz9989
+
+* Nelson, D.M.; Nagel, J.; Trott, R.; **Campbell, C. J.**; Pruitt, L.; Good, R.E.; Iskali, G. and Gugger, P.F. 2018. Carcass age and searcher identity affect morphological assessment of sex of bats. The Journal of Wildlife Management. 82(8), 1582-1587.
+
+* **Campbell, C. J.**; Nelson, D. M.; Ogawa, N.O.; Chikaraishi, Y.; and Ohkouchi, N. 2017. Trophic position and dietary breadth of bats revealed by nitrogen isotopic composition of amino acids. Scientific Reports 7:15932.
+
+* Roman, J.; Altman, I.; Dunphy-Daly, M.; **Campbell, C.**; Jasny, M.; and Read, A. 2013. The Marine Mammal Protection Act at 40: Status, recovery, and future of U.S. marine mammals. The Annals of the New York Academy of Sciences 1286:29-49.
+
+#### Theses
+
+* **Campbell, C. J.** 2018. Refining assessment of geographic origins of animals inferred from stable isotope data. Masters Thesis, Department of Biology, Frostburg State University, Frostburg, MD.
+
+* **Campbell, C.** 2012. Livestock depredation by large carnivores: An analysis of human-wildlife conflict in Ehi-rovipuka, Namibia. Honors thesis: Environmental Sciences, Biology. University of Vermont, Burlington, VT.
 
 
-Open Source Software
-=====
-* Author
+#### Open Source Software
+
+**Author**
+
   * isocat: Isotope Origin Clustering and Assignment Tools. 2018.
     Release: https://CRAN.R-project.org/package=isocat
     Development: https://github.com/cjcampbell/isocat
 
-* Contributor
+**Contributor**
+
   * phenesse: Estimate Phenological Metrics using Presence-Only Data. 2019.
     Release: https://CRAN.R-project.org/package=phenesse
     Development: https://github.com/mbelitz/phenesse
@@ -61,75 +77,113 @@ Honors and Awards
 
 Research Experience
 =====
-Graduate Research Assistant, July 2015 – August 2018
-University of Maryland Center for Environmental Science 
-Appalachian Laboratory, Frostburg, MD
+
+**Graduate Research Assistant, July 2015 – August 2018**
+
+*University of Maryland Center for Environmental Science, Appalachian Laboratory, Frostburg, MD*
+
 -	Modeled seasonal movements of long-distance migrant bats Lasiurus cinereus, L. borealis, Lasionycteris noctivagans using Bayesian probabilistic assignment of summer origins inferred from stable hydrogen isotope analysis and ensemble species distribution models
 -	Developed novel statistical techniques to compare, group, and validate isotope-derived probability of origin models
 -	Projects completed:
 -	New techniques for combining and interpreting the isotopic and distribution likelihood-of-origin models of migratory animals
 -	Range-wide models of the migratory movements of North American tree bats
 
-National Science Foundation East Asia and Pacific Summer Institute (NSF EAPSI) Research Fellow / Japanese Society for the Promotion of Science (JSPS) Summer Research Fellow, May 2016 – August 2016
-Department of Biogeochemistry, Japan Agency for Marine Science and Technology (JAMSTEC), Yokosuka, Kanagawa Prefecture, Japan
+
+
+**National Science Foundation East Asia and Pacific Summer Institute (NSF EAPSI) Research Fellow / Japanese Society for the Promotion of Science (JSPS) Summer Research Fellow, May 2016 – August 2016**
+
+*Department of Biogeochemistry, Japan Agency for Marine Science and Technology (JAMSTEC), Yokosuka, Kanagawa Prefecture, Japan*
+
 -	Applicability of compound-specific isotope analysis of amino acids (CSIA-AA) to identify the trophic levels of specialized species of microchiropteran bats
 -	Investigation of dietary ecology and trophic positions of migratory North American bats
 -	Derivitization of amino acids, quantification using gas chromatograph mass-spectrometer (GC/MS), analysis gas chromatograph isotope ratio mass spectrometer (GC/IRMS)
 
-Endangered Bat Monitoring Crew Leader, May – July 2015
-Arkansas State University / U.S. Forest Service, Jonesboro, AR
+
+**Endangered Bat Monitoring Crew Leader, May – July 2015**
+
+*Arkansas State University / U.S. Forest Service, Jonesboro, AR*
+
 -	Led crews of technicians to conduct presence/probable absence surveys for endangered Myotis sodalis (Indiana myotis) and threatened M. septentrionalis (northern long-eared myotis) 
 -	Monitored species distributions with mist netting, harp trapping, acoustic monitoring and analysis (AnaBat), and radiotelemetry of M. sodalis and M. grisescens (grey myotis)
 
-Bat Research and Management Technician, Jan – May 2015
-New York Department of Environmental Conservation, Albany, NY
+
+**Bat Research and Management Technician, Jan – May 2015**
+
+*New York Department of Environmental Conservation, Albany, NY*
+
 -	Performed hibernacula surveys to assess population trends of endangered and unlisted bats
 -	Wrote and distributed reports and papers to government agencies, NGOs, and the public; coordinated surveys with local, regional, and state agencies
 -	Trained others in winter survey counts, acoustic surveys (Binary Acoustic systems), spring emergence surveys; data analysis and interpretation
 
-Herpetofauna Ecology Research Assistant, Nov – Dec 2014
-Florida International University, Sarapiqui, Costa Rica
+
+**Herpetofauna Ecology Research Assistant, Nov – Dec 2014**
+
+*Florida International University, Sarapiqui, Costa Rica*
+
 -	Conducted transect surveys and acoustic monitoring of amphibian and reptile species assemblages in successional forest matrix
 -	Examined morphological variations using ImageJ; designed models to measure operative temperature
 
-Endangered Bat Species Monitoring Senior Research Technician, May – Aug 2014
-Arkansas State University / U.S. Forest Service, Jonesboro, AR
+
+**Endangered Bat Species Monitoring Senior Research Technician, May – Aug 2014**
+
+*Arkansas State University / U.S. Forest Service, Jonesboro, AR*
+
 -	Performed presence/probable absence surveys for endangered Myotis sodalis populations
 -	Monitored species distributions with mist netting, harp trapping, acoustic monitoring and analysis, and radiotelemetry of M. sodalis and M. grisescens
 -	Training and supervision of research technicians
 
-Field Ecologist, June – August 2014
-Mitigation Surveying Services LLC, Benton, AR
+
+**Field Ecologist, June – August 2014**
+
+*Mitigation Surveying Services LLC, Benton, AR*
+
 -	Monitoring for presence/probable absence of threatened and endangered bats on private lands; performed habitat delineation
 -	Mist netting, acoustic monitoring, pathology (white-nose syndrome) surveys, cave exit counts
 
-Mammal Diversity Project Field Assistant, Jan – Apr 2014
-Smithsonian Conservation Biological Institute, Chiapas, Mexico
+**Mammal Diversity Project Field Assistant, Jan – Apr 2014**
+
+*Smithsonian Conservation Biological Institute, Chiapas, Mexico*
+
 -	Daily setting and monitoring of Sherman and camera traps
 -	Small mammal trapping and handling
 -	Vegetation measurements for habitat characterization
 
-Endangered Bat Species Survey and Research Technician, May – Aug 2013
-Arkansas State University / U.S. Forest Service, Jonesboro, AR
+
+**Endangered Bat Species Survey and Research Technician, May – Aug 2013**
+
+*Arkansas State University / U.S. Forest Service, Jonesboro, AR*
+
 -	Performed compliance monitoring for endangered Myotis sodalis populations
 -	Monitored species distributions with mist netting, banding, and acoustic monitoring
 
-Conservation Ecology Research Assistant, 2009 – 2013
-Gund Institute of Ecological Economics, University of Vermont, Burlington, VT
+
+**Conservation Ecology Research Assistant, 2009 – 2013**
+
+*Gund Institute of Ecological Economics, University of Vermont, Burlington, VT*
+
 -	Assisted in research and production of publications on endangered species management; cetacean and pinniped population trends, community ecology, and management policy; invasive species ecology and control; and ecosystem services
 -	Coauthored paper on the efficacy of the Marine Mammal Protection Act: aggregated massive data set and analyzed for changes in species’ conservation status, population size, and trends
 
-Student Research Assistant, Feb – May 2011
-Round River Conservation Studies, Wereldsend, Kunene Region, Namibia 
+
+**Student Research Assistant, Feb – May 2011**
+
+*Round River Conservation Studies, Wereldsend, Kunene Region, Namibia *
+
 -	Designed and implemented study on human-wildlife conflict and wildlife predation of livestock
 -	Worked on vegetation and game surveys in conjunction with local NGOs and communities; assisted with study design, data collection and analysis, and community administration efforts
 
-Invasive Species and Biocontrol Volunteer, 2007 – 2009
-Nashua River Watershed Association, Groton, MA.
+
+**Invasive Species and Biocontrol Volunteer, 2007 – 2009**
+
+*Nashua River Watershed Association, Groton, MA*
+
 -	Cultivated multiple generations of Galerucella spp. biocontrol agents with daily care; assisted with annual field sample collection, seasonal invasive species monitoring
 
-Biodiversity and Administrative Intern, 2008
-Massachusetts Audubon Society, Princeton and Worcester, MA.
+
+**Biodiversity and Administrative Intern, 2008**
+
+*Massachusetts Audubon Society, Princeton and Worcester, MA*
+
 -	Performed GIS and resource surveys of habitat segments at risk of development to identify and evaluate wildlife corridors of conservation significance
 -	Assisted with administrative, technological running of sanctuaries and nature centers; led environmental education programs with public and school groups
 
@@ -178,30 +232,23 @@ Frostburg State University Department of Biology, Frostburg, MD
 -	Taught Anatomy and Physiology II Laboratory (BIOL 322); 2-credit 110 minute laboratory twice weekly. Structure and function of the human body, including the endocrine, circulatory, respiratory, digestive, excretory, and reproductive systems, and human development.
 -	Assisted with Anatomy and Physiology II Lecture section and administration.
 
-Mentorship Experience
-=====
-Undergraduate research technicians mentored and supervised
-University of Florida
-Sierra Scauzillo (Wildlife Ecology and Conservation; 2020 – present); 
-Frostburg State University
-Becca Phillips (2017); Sarah Sprouse (2017); Kamren Jefferson (2016); Jake Blakely (2016); Crystal Tippet (2016); Becca Hiller (2015-2016)
-
-
 Service and Community Outreach
 =====
-Manuscript reviews
+
+##### Manuscript reviews
 * Animal Migration (2020)
 * STOTEM (2020)
 * Journal of Mammalogy (2020)
 * Acta Chiropterologica (2021)
 
-Outreach
-Biology Graduate Student Experience Panelist, Outreach event to provide new graduate students advice and support on navigating graduate school and research. Event sponsored by the Biology Graduate Student Association Mental Health Committee. February 27, 2019.
-Graduate School Panel Biology Representative, Outreach event to provide undergraduate students advice about STEM graduate programs. Event co-sponsored by graduate student career-building club POLY/PMSE and chemistry fraternity Alpha Chi Sigma. Nov 15, 2019.
-Graduate Student Writing Group, Founder and coordinator. Semi-weekly inter-institutional meetings of graduate students from University of Maryland Center for Environmental Science Appalachian Laboratory and the Department of Biology of Frostburg State University to workshop writing skills. Fall 2015 – Spring 2018.
-Bat Ecology and Conservation, University of Maryland Center for Environmental Science Appalachian Laboratory Open House. Public outreach to community and families including bat ecology, behavior, ecosystem services, and conservation status. May 7, 2016.
-Endangered Bats of Maryland, Presentation to local elementary school in rural Appalachia on natural history, ecology, threats, and legal status of local bats, Oct 2, 2015
-Herpetofauna of Sarapiquí, Costa Rica. Educational presentation, live animal handling, and public outreach at La Selva Biological Station Open House, Nov 9, 2014
-Living with Bears, Authored article for local online paper on coexisting with black bears in Massachusetts: “Your New Groton Neighbors, The Bears, May Be Dropping By.” TheGrotonLine.com. Nov 21, 2013
-Community Conservation Technology Training, Week-long collaboration with Ehi-rovipuka conservancy conservation officers: training on data collection and database management, open-source document managers, email and outreach. Round River Conservation Studies, March 2012.
-Invasive Species and Biocontrol Volunteer, Nashua River Watershed Association, Groton, MA, 2007-2009
+##### Outreach
+
+* Biology Graduate Student Experience Panelist, Outreach event to provide new graduate students advice and support on navigating graduate school and research. Event sponsored by the Biology Graduate Student Association Mental Health Committee. February 27, 2019.
+* Graduate School Panel Biology Representative, Outreach event to provide undergraduate students advice about STEM graduate programs. Event co-sponsored by graduate student career-building club POLY/PMSE and chemistry fraternity Alpha Chi Sigma. Nov 15, 2019.
+* Graduate Student Writing Group, Founder and coordinator. Semi-weekly inter-institutional meetings of graduate students from University of Maryland Center for Environmental Science Appalachian Laboratory and the Department of Biology of Frostburg State University to workshop writing skills. Fall 2015 – Spring 2018.
+* Bat Ecology and Conservation, University of Maryland Center for Environmental Science Appalachian Laboratory Open House. Public outreach to community and families including bat ecology, behavior, ecosystem services, and conservation status. May 7, 2016.
+* Endangered Bats of Maryland, Presentation to local elementary school in rural Appalachia on natural history, ecology, threats, and legal status of local bats, Oct 2, 2015
+* Herpetofauna of Sarapiquí, Costa Rica. Educational presentation, live animal handling, and public outreach at La Selva Biological Station Open House, Nov 9, 2014
+* Living with Bears, Authored article for local online paper on coexisting with black bears in Massachusetts: “Your New Groton Neighbors, The Bears, May Be Dropping By.” TheGrotonLine.com. Nov 21, 2013
+* Community Conservation Technology Training, Week-long collaboration with Ehi-rovipuka conservancy conservation officers: training on data collection and database management, open-source document managers, email and outreach. Round River Conservation Studies, March 2012.
+* Invasive Species and Biocontrol Volunteer, Nashua River Watershed Association, Groton, MA, 2007-2009
