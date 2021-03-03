@@ -1,4 +1,6 @@
 pub_date	title	venue	excerpt	citation	url_slug	paper_url
-2009-10-01	Paper Title Number 1	Journal 1	This paper is about the number 1. The number 2 is left for future work.	Your Name, You. (2009). "Paper Title Number 1." <i>Journal 1</i>. 1(1).	paper-title-number-1	http://academicpages.github.io/files/paper1.pdf
-2010-10-01	Paper Title Number 2	Journal 1	This paper is about the number 2. The number 3 is left for future work.	Your Name, You. (2010). "Paper Title Number 2." <i>Journal 1</i>. 1(2).	paper-title-number-2	http://academicpages.github.io/files/paper2.pdf
-2015-10-01	Paper Title Number 3	Journal 1	This paper is about the number 3. The number 4 is left for future work.	Your Name, You. (2015). "Paper Title Number 3." <i>Journal 1</i>. 1(3).	paper-title-number-3	http://academicpages.github.io/files/paper3.pdf
+2012	"Livestock depredation by large carnivores: An analysis of human-wildlife conflict in Ehi-rovipuka, Namibia"			"Your Name, You. (2009). ""Paper Title Number 1."" <i>Journal 1</i>. 1(1)."	2012-depredation	
+2017	Trophic position and dietary breadth of bats revealed by nitrogen isotopic composition of amino acids	Scientific Reports		"Your Name, You. (2010). ""Paper Title Number 2."" <i>Journal 1</i>. 1(2)."	2017-CSIAA	10.1038/s41598-017-15440-3
+12/6/19	Wind energy: An ecological challenge	Science		"Your Name, You. (2015). ""Paper Title Number 3."" <i>Journal 1</i>. 1(3)."	2019-windEnergy	10.1126/science.aaz9989
+2018	Carcass age and searcher identity affect morphological assessment of sex of bats	The Journal of Wildlife Management			2018-carcassSearch	10.1002/jwmg.21544
+6/2/20	Advancing interpretation of stable isotope assignment maps: comparing and summarizing origins of known-provenance migratory bats	Animal Migration			2020-ProbSurfaces	10.1515/ami-2020-0004
