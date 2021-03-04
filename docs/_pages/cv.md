@@ -15,12 +15,12 @@ Download CV <a href="https://cjcampbell.github.io/documents/CaitlinJCampbell_cv_
 ### Education
 
 * PhD	University of Florida, 2018 – present
-    * Doctoral student of Zoology, Department of Biology. GPA 4.0.
+    * Doctoral student of Zoology, Department of Biology.
     * Advisor: Hannah Vander Zanden
 
 * MS	University of Maryland Center for Environmental Science, 2018
     * Appalachian Laboratory; Frostburg State University	 
-    * Applied Ecology and Quantitative Biology. GPA 4.0.
+    * Applied Ecology and Quantitative Biology.
     * Advisor: David M. Nelson 
 
 * BS	University of Vermont	2012
