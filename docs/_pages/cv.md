@@ -9,23 +9,16 @@ redirect_from:
 
 {% include base_path %}
 
-Download CV <a href="https://cjcampbell.github.io/documents/CaitlinJCampbell_cv_2021_02.pdf" target="_blank">here.</a>
+Download my complete CV here <a href="https://cjcampbell.github.io/documents/CaitlinJCampbell_cv_2021_02.pdf" target="_blank">here.</a>
 
 
 ### Education
 
-* PhD	University of Florida, 2018 – present
-    * Doctoral student of Zoology, Department of Biology.
-    * Advisor: Hannah Vander Zanden
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**PhD**	University of Florida, *2018 – present*
 
-* MS	University of Maryland Center for Environmental Science, 2018
-    * Appalachian Laboratory; Frostburg State University	 
-    * Applied Ecology and Quantitative Biology.
-    * Advisor: David M. Nelson 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**MS** Frostburg State University / University of Maryland Center for Environmental Science Appalachian Laboratory, *2018*
 
-* BS	University of Vermont	2012
-    * Environmental Science: Conservation Biology and Biodiversity.
-    * Honors Graduate
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**BS**	University of Vermont	*2012*
 
 
 ### Publications
