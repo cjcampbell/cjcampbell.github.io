@@ -3907,3 +3907,8 @@ input, select, textarea {
 			}
 
 		}
+		
+/* icons */
+    .filter-icon{
+        filter: invert(80%) saturate(0%) brightness(100%);
+    }
