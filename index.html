@@ -3,7 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CJ Campbell</title>
+  <title>CJ Campbell &mdash; Quantitative Ecology &amp; Conservation</title>
+  <meta name="description" content="Quantitative methods for biodiversity conservation where data are limited, uneven, or brand-new. Research Scientist at the University of Wisconsin–Madison and Quantitative Ecologist at Bat Conservation International.">
+  <meta name="author" content="CJ Campbell">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Open Graph / social share cards -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cjcampbell.github.io/">
+  <meta property="og:title" content="CJ Campbell — Quantitative Ecology & Conservation">
+  <meta property="og:description" content="Quantitative methods for biodiversity conservation where data are limited, uneven, or brand-new.">
+  <meta property="og:image" content="https://cjcampbell.github.io/images/og_card.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CJ Campbell — Quantitative Ecology & Conservation">
+  <meta name="twitter:description" content="Quantitative methods for biodiversity conservation where data are limited, uneven, or brand-new.">
+  <meta name="twitter:image" content="https://cjcampbell.github.io/images/og_card.jpg">
+
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 </head>
@@ -17,7 +34,8 @@
       <span></span><span></span><span></span>
     </label>
     <ul class="nav-links">
-      <li><a href="#research">Research</a></li>
+      <li class="nav-back"><a href="index.html" aria-label="Home"><span class="bat-glyph"></span></a></li>
+      <li><a href="methods.html">Research</a></li>
       <li><a href="pubs.html">Publications / CV</a></li>
       <li><a href="news.html">News</a></li>
       <li><a href="#about">About &amp; Contact</a></li>
@@ -26,13 +44,15 @@
 
   <!-- Hero -->
   <section id="hero">
-    <video autoplay muted loop playsinline>
+    <video autoplay muted loop playsinline poster="images/vid_hero_poster.jpg">
       <source src="images/vid_hero.mp4" type="video/mp4">
     </video>
     <div class="hero-overlay"></div>
+    <div class="hero-frost" aria-hidden="true"></div>
     <div class="hero-content">
       <h1>CJ Campbell</h1>
-      <p class="hero-tagline">Quantitative ecology | Animal movement | Biodiversity informatics | Conservation & Impact </p>
+      <p class="hero-tagline">Quantitative methods for biodiversity conservation where data are limited, uneven, or brand-new</p>
+      <p class="hero-affiliation">University of Wisconsin&ndash;Madison &middot; Bat Conservation International</p>
       <ul class="hero-icons">
         <li><a href="https://github.com/cjcampbell/" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
         <li><a href="https://scholar.google.com/citations?user=3hXUsSEAAAAJ" aria-label="Google Scholar"><i class="ai ai-google-scholar-square"></i></a></li>
@@ -50,48 +70,53 @@
 
     <div class="research-header inner">
       <h2 class="section-title">Research</h2>
-      <p class="section-intro">I am a conservation ecologist who specializes in developing methods, tools, and approaches to 
-      tackling complex pressing conservation challenges in systems that would otherwise go without.</p>
+      <p class="section-intro">I am a conservation ecologist who develops the methods, tools, and approaches needed to
+      tackle pressing conservation challenges, especially in the systems and species that would otherwise go understudied.</p>
     </div>
 
 
-    <div class="spotlight">
-      <div class="spotlight-image">
-        <img src="images/garrettCo_snap.png" alt="Aerial view of landscape for aeroecology research">
-      </div>
-      <div class="spotlight-content">
-        <h3>Aeroecology and Migration</h3>
-        <p>Seasonal animal migration is a globally ubiquitous process that governs ecosystem structure and function, linking distant regions through the exchange of genes, energy, and disease. My research spans birds, bats, and insects to reveal the cryptic dynamics of migration and its consequences for wildlife conservation. Transitioning to renewable energy is essential to limit the worst effects of climate change — but wind energy development disproportionately affects migratory species. I study how migratory behavior drives fatality risk at wind energy facilities and develop tools to target interventions toward the times and places when migrants are most present.</p>
-      </div>
-    </div>
-
-    <div class="spotlight reverse">
-      <div class="spotlight-image">
-        <img src="images/n_total_Species.png" alt="Biodiversity data visualization">
-      </div>
-      <div class="spotlight-content">
-        <h3>Biodiversity Data Science</h3>
-        <p>The volume of openly accessible biodiversity data is growing exponentially, but coverage remains deeply uneven across taxa, regions, and time. I develop methods and tools to harness participatory science platforms like iNaturalist, diagnose biases in global biodiversity databases, and fill knowledge gaps in under-studied regions. A central future direction is quantifying global biodiversity sampling completeness across the Global Biodiversity Information Facility (GBIF) — to identify where evidence-based conservation policy, including ambitious frameworks like the Kunming-Montreal 30x30 target, is most constrained by missing data.</p>
-      </div>
-    </div>
-
-    <div class="spotlight">
-      <div class="spotlight-image">
-        <img src="images/hoary_bat_brockfenton.jpg" alt="Hoary bat in flight">
-      </div>
-      <div class="spotlight-content">
-        <h3>Bat Ecology and Conservation</h3>
-        <p>Bats are among the most diverse and least-studied groups of mammals. My work deepens understanding of bat ecology and informs conservation by integrating data across scales — from historical museum specimens to novel community science observations. A major focus is the ongoing white-nose syndrome epidemic, one of the most devastating emerging wildlife diseases, which threatens cave-hibernating bats whose persistence is tightly coupled to cave microclimate. I investigate the relationships between climate change, disease dynamics, and bat behavior to identify where and how at-risk populations can be supported across the annual cycle.</p>
-      </div>
-    </div>
-
-    <div class="spotlight reverse">
-      <div class="spotlight-image">
-        <img src="images/pexels-세훈-오-10169285.jpg" alt="Remote wildlife monitoring equipment">
-      </div>
-      <div class="spotlight-content">
-        <h3>Remote Wildlife Monitoring</h3>
-        <p>Understanding animal behavior and biodiversity at scale requires expanding the toolkit beyond traditional field methods. I develop and apply remote and non-invasive monitoring approaches — including endogenous chemical markers, passive acoustic monitoring, and weather surveillance radar — to reveal wildlife patterns that would otherwise remain hidden. As part of the Limelight Rainforest team (winners of the $5M XPRIZE Rainforest grand prize), I developed a human-in-the-loop machine learning pipeline for bat bioacoustics and helped link canopy biodiversity data from eDNA and acoustics to ecosystem structure and services. I am also actively developing radar-based approaches to monitor animal movements at broad scales — a rich and rapidly advancing frontier for migration ecology and conservation.</p>
+    <div class="inner">
+      <div class="research-list">
+        <a class="research-item" href="methods.html#research-monitoring">
+          <div class="research-thumb"><img src="images/cv_bat_tracking.jpg" alt="Computer-vision detection of bats in flight"></div>
+          <div class="research-item-body">
+            <h3>Remote Biodiversity Monitoring</h3>
+            <p>Acoustic, computer-vision, and radar methods that track wildlife at scales traditional fieldwork cannot reach.</p>
+            <span class="research-item-more">View more →</span>
+          </div>
+        </a>
+        <a class="research-item" href="methods.html#research-biodiversity">
+          <div class="research-thumb"><img src="images/biad051fig2-cropped.jpeg" alt="iNaturalist identifier networks"></div>
+          <div class="research-item-body">
+            <h3>Biodiversity Informatics</h3>
+            <p>Harnessing platforms like iNaturalist and GBIF, and diagnosing bias in global biodiversity data.</p>
+            <span class="research-item-more">View more →</span>
+          </div>
+        </a>
+        <a class="research-item" href="methods.html#research-aeroecology">
+          <div class="research-thumb"><img src="images/pexels-세훈-오-10169285.jpg" alt="Wind turbines on a ridge"></div>
+          <div class="research-item-body">
+            <h3>Aeroecology and Migration</h3>
+            <p>Revealing the cryptic migrations of birds, bats, and insects, and their risks at wind-energy facilities.</p>
+            <span class="research-item-more">View more →</span>
+          </div>
+        </a>
+        <a class="research-item" href="methods.html#research-conservation">
+          <div class="research-thumb"><img src="images/state_of_bats.jpg" alt="North American bats by phylogeny and conservation status"></div>
+          <div class="research-item-body">
+            <h3>Science-to-Conservation Linkages</h3>
+            <p>Turning quantitative findings into practical guidance for wildlife management and policy.</p>
+            <span class="research-item-more">View more →</span>
+          </div>
+        </a>
+        <a class="research-item" href="methods.html#research-bats">
+          <div class="research-thumb"><img src="images/hoary_bat_brockfenton.jpg" alt="Hoary bat in flight"></div>
+          <div class="research-item-body">
+            <h3>Bat Ecology &amp; Natural History</h3>
+            <p>Filling gaps in the natural history of one of the most diverse, least-studied groups of mammals.</p>
+            <span class="research-item-more">View more →</span>
+          </div>
+        </a>
       </div>
     </div>
 
@@ -102,27 +127,39 @@
         <p class="section-intro">I leverage a broad suite of methodological approaches to tackle pressing conservation challenges, with a particular focus on developing the methods needed to conduct research in under-studied systems and taxa.</p>
         <div class="methods-grid">
           <div class="method-card">
+            <i class="fas fa-chart-line method-icon"></i>
+            <h4>Data Science</h4>
+            <p>I develop methods to integrate biodiversity data from many sources and account for the biases in large, uneven datasets.</p>
+            <a href="methods.html#data">Learn more →</a>
+          </div>
+          <div class="method-card">
+            <i class="fas fa-project-diagram method-icon"></i>
+            <h4>Machine Learning &amp; Quantitative Methods</h4>
+            <p>From computer-vision detection to hierarchical and Bayesian models, I build the analytical tools that turn large, noisy ecological data into inference.</p>
+            <a href="methods.html#ml">Learn more →</a>
+          </div>
+          <div class="method-card">
             <i class="fas fa-globe method-icon"></i>
             <h4>Spatial Modeling</h4>
             <p>Understanding how organisms interact with, and are limited by, their environment is a central question of ecology.</p>
             <a href="methods.html#SDM">Learn more →</a>
           </div>
           <div class="method-card">
-            <i class="fas fa-database method-icon"></i>
-            <h4>Biodiversity Informatics</h4>
-            <p>The availability of biodiversity data is increasing exponentially. I research its generation and develop methods to apply it rigorously.</p>
-            <a href="methods.html#data">Learn more →</a>
+            <i class="fas fa-microphone method-icon"></i>
+            <h4>Remote Monitoring &amp; Bioacoustics</h4>
+            <p>I deploy passive acoustic monitoring, bioacoustic detection, and weather-surveillance radar to observe wildlife at scales that traditional field methods cannot reach.</p>
+            <a href="methods.html#monitoring">Learn more →</a>
           </div>
           <div class="method-card">
             <i class="fas fa-atom method-icon"></i>
-            <h4>Endogenous Markers</h4>
-            <p>Analyzing endogenous markers can help scale studies of animal movement from the individual to that of the population.</p>
+            <h4>Stable Isotopes &amp; Endogenous Markers</h4>
+            <p>Analyzing endogenous markers like stable isotopes helps scale studies of animal movement from the individual to the population.</p>
             <a href="methods.html#SIA">Learn more →</a>
           </div>
           <div class="method-card">
             <i class="fas fa-laptop-code method-icon"></i>
             <h4>Software Development</h4>
-            <p>I am passionate about developing open-source software to promote accessible and reproducible science.</p>
+            <p>I develop open-source software to promote accessible, reproducible science.</p>
             <a href="methods.html#dev">Learn more →</a>
           </div>
         </div>
@@ -139,7 +176,7 @@
   <section id="news">
     <div class="inner">
       <h2 class="section-title">News &amp; Announcements</h2>
-      <p class="section-intro">Recent updates from the lab — new papers, talks, and projects.</p>
+      <p class="section-intro">Recent updates: new papers, talks, and projects.</p>
       <div id="news-grid" class="news-grid" data-limit="6"></div>
       <div class="section-cta" style="padding-top:2rem; padding-bottom:0;">
         <a href="news.html" class="btn btn-outline">View all news →</a>
@@ -156,10 +193,9 @@
           <img src="images/me_labo.jpg" alt="CJ Campbell in the field">
         </div>
         <div class="about-bio">
-          <p>I am a quantitative ecologist at <a href="https://www.batcon.org">Bat Conservation International</a>. I have also led the bat bioacoustics and bioinformatics efforts for <a href="https://www.xprize.org/prizes/rainforest">XPrize Rainforest</a> finalist team <a href="https://www.teamwaponi.org">Limelight Rainforest</a>.</p>
-          <p>I completed my PhD at the University of Florida in the <a href="https://people.clas.ufl.edu/hvz/">Animal Migration and Ecology Lab</a> working with <a href="https://people.clas.ufl.edu/hvz/people/">Hannah Vander Zanden</a> in the Department of Biology. I was a <a href="https://biodiversity.research.ufl.edu/">University of Florida Biodiversity Institute</a> Fellow and was also supported by a UF Graduate School Fellowship.</p>
-          <p>My master's research was conducted at the <a href="https://www.umces.edu/al">University of Maryland Center for Environmental Science Appalachian Laboratory</a> with <a href="https://www.umces.edu/david-nelson">Dave Nelson</a> and Frostburg State University. In 2016 I was a National Science Foundation East Asia and Pacific Summer Institute (<a href="https://www.nsfsi.org/">NSF EAPSI</a>) Research Fellow / Japanese Society for the Promotion of Science (JSPS) Summer Research Fellow.</p>
-          <p>I attended the University of Vermont, gaining my B.S. with honors and working with <a href="https://www.joeroman.com/">Joe Roman</a> at the <a href="https://www.uvm.edu/gund">Gund Institute for the Environment</a>. I conducted fieldwork for a semester in Namibia while studying abroad with <a href="https://www.roundriver.org/">Round River Conservation Studies</a>. Between my B.S. and my M.S., I worked as an ecological field technician on projects in Chiapas, MEX; Puerto Viejo, CRI; and Arkansas and New York, USA.</p>
+          <p>I am a quantitative ecologist working at the interface of academic research and conservation practice, with joint appointments at the University of Wisconsin&ndash;Madison and <a href="https://www.batcon.org">Bat Conservation International</a>. At UW&ndash;Madison I am a Research Scientist in the Department of Forest and Wildlife Ecology (beginning August 2026); at Bat Conservation International I am a Quantitative Ecologist. I also led the bat bioacoustics and bioinformatics efforts for <a href="https://www.xprize.org/prizes/rainforest">XPRIZE Rainforest</a> grand prize&ndash;winning team <a href="https://www.teamwaponi.org">Limelight Rainforest</a>.</p>
+          <p>I earned my PhD at the University of Florida in <a href="https://people.clas.ufl.edu/hvz/people/">Hannah Vander Zanden</a>&rsquo;s <a href="https://people.clas.ufl.edu/hvz/">Animal Migration and Ecology Lab</a>, as a <a href="https://biodiversity.research.ufl.edu/">University of Florida Biodiversity Institute</a> Fellow and UF Graduate School Fellow. My master&rsquo;s research (with <a href="https://www.umces.edu/david-nelson">Dave Nelson</a> at the <a href="https://www.umces.edu/al">University of Maryland Center for Environmental Science Appalachian Laboratory</a> and Frostburg State University) was supported by a 2016 NSF East Asia and Pacific Summer Institutes (<a href="https://www.nsfsi.org/">EAPSI</a>) / JSPS Summer Fellowship.</p>
+          <p>I completed my B.S. with honors at the University of Vermont, working with <a href="https://www.joeroman.com/">Joe Roman</a> at the <a href="https://www.uvm.edu/gund">Gund Institute for the Environment</a>, and spent a semester doing fieldwork in Namibia with <a href="https://www.roundriver.org/">Round River Conservation Studies</a>. Before graduate school, I worked as an ecological field technician on projects in the fincas of Chiapas (MEX), the rainforests of Puerto Viejo (Costa Rica), the Ozark mountains of Arkansas, and the cave systems of New York.</p>
         </div>
       </div>
     </div>

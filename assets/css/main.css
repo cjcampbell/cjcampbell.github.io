@@ -1,6 +1,16 @@
 @import url(fontawesome-all.min.css);
 
 /* =============================================
+   Self-hosted fonts (latin subset)
+   ============================================= */
+@font-face { font-family:'Inter'; font-style:normal; font-weight:400; font-display:swap; src:url(../fonts/inter-400.woff2) format('woff2'); }
+@font-face { font-family:'Inter'; font-style:normal; font-weight:600; font-display:swap; src:url(../fonts/inter-600.woff2) format('woff2'); }
+@font-face { font-family:'Inter'; font-style:normal; font-weight:700; font-display:swap; src:url(../fonts/inter-700.woff2) format('woff2'); }
+@font-face { font-family:'Inter'; font-style:italic; font-weight:400; font-display:swap; src:url(../fonts/inter-italic-400.woff2) format('woff2'); }
+@font-face { font-family:'Montserrat'; font-style:normal; font-weight:600; font-display:swap; src:url(../fonts/montserrat-600.woff2) format('woff2'); }
+@font-face { font-family:'Montserrat'; font-style:normal; font-weight:700; font-display:swap; src:url(../fonts/montserrat-700.woff2) format('woff2'); }
+
+/* =============================================
    CSS Custom Properties
    ============================================= */
 :root {
@@ -14,7 +24,6 @@
   --color-slate:          #2c4060;
   --color-amber:          #c5a253;
   --color-border:         #d5ddd0;
-  --color-hero-overlay:   rgba(185, 200, 205, 0.25);
   --nav-height:           64px;
   --max-width:            1100px;
   --radius:               8px;
@@ -35,7 +44,7 @@ html {
 }
 
 body {
-  font-family: system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
   background: var(--color-bg);
   color: var(--color-text);
   line-height: 1.75;
@@ -61,6 +70,7 @@ ul { list-style: none; }
    Typography
    ============================================= */
 h1, h2, h3, h4 {
+  font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
   line-height: 1.3;
   font-weight: 600;
   color: var(--color-text);
@@ -74,6 +84,8 @@ h4 { font-size: 1rem; }
   color: var(--color-forest);
   font-size: 2rem;
   margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
 .section-intro {
@@ -123,12 +135,13 @@ section[id] {
 }
 
 .nav-logo {
+  font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
   font-size: 1.1rem;
   font-weight: 700;
   color: #ffffff;
   text-decoration: none;
   flex-shrink: 0;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.14em;
 }
 .nav-logo:hover { color: rgba(255, 255, 255, 0.75); }
 
@@ -142,10 +155,24 @@ section[id] {
   color: rgba(255, 255, 255, 0.75);
   font-size: 0.95rem;
   font-weight: 500;
+  letter-spacing: 0.06em;
   text-decoration: none;
   transition: color var(--transition);
 }
 .nav-links a:hover { color: #ffffff; }
+.nav-back a {
+  display: inline-flex;
+  align-items: center;
+}
+.nav-back .bat-glyph {
+  display: inline-block;
+  width: 20px;
+  height: 24px;
+  background-color: currentColor;
+  -webkit-mask: url(../../images/labo_solid.svg) center / contain no-repeat;
+  mask: url(../../images/labo_solid.svg) center / contain no-repeat;
+  transition: background-color var(--transition);
+}
 
 /* Mobile hamburger (CSS-only checkbox toggle) */
 .nav-toggle-input { display: none; }
@@ -215,6 +242,8 @@ section[id] {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: #14201a center / cover no-repeat;
+  background-image: url(../../images/vid_hero_poster.jpg);
 }
 
 #hero video {
@@ -228,7 +257,32 @@ section[id] {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: var(--color-hero-overlay);
+  /* Soft radial vignette behind the text block (top layer) over the top/bottom scrim */
+  background:
+    radial-gradient(ellipse 50% 46% at 50% 46%,
+      rgba(240, 242, 238, 0.82) 0%,
+      rgba(240, 242, 238, 0.40) 38%,
+      rgba(240, 242, 238, 0) 84%),
+    linear-gradient(
+      to bottom,
+      rgba(10, 15, 12, 0.28) 0%,
+      rgba(10, 15, 12, 0.04) 32%,
+      rgba(10, 15, 12, 0.06) 60%,
+      rgba(10, 15, 12, 0.36) 100%
+    );
+}
+
+/* Frosted-glass pane confined to the ellipse behind the text */
+.hero-frost {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  backdrop-filter: blur(7px) saturate(1.08);
+  -webkit-backdrop-filter: blur(7px) saturate(1.08);
+  -webkit-mask-image: radial-gradient(ellipse 50% 46% at 50% 46%,
+    #000 0%, #000 30%, transparent 84%);
+  mask-image: radial-gradient(ellipse 50% 46% at 50% 46%,
+    #000 0%, #000 30%, transparent 84%);
 }
 
 .hero-content {
@@ -237,23 +291,34 @@ section[id] {
   text-align: center;
   color: #fff;
   padding: 0 1.5rem;
-  max-width: 850px;
+  max-width: 1040px;
+  text-shadow: 0 1px 10px rgba(255, 255, 255, 0.6);
 }
 
 .hero-content h1 {
   font-size: clamp(2.5rem, 6vw, 4rem);
-  color: #fff;
+  color: #14251b;
   margin-bottom: 1rem;
   font-weight: 700;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.08em;
 }
 
 .hero-tagline {
   font-size: clamp(1rem, 2.5vw, 1.25rem);
-  color: rgba(255, 255, 255, 0.88);
-  margin-bottom: 2rem;
+  color: rgba(45, 90, 61, 0.95);
+  margin-bottom: 1rem;
   line-height: 1.65;
-  font-style: italic;
+  text-wrap: balance;
+}
+
+.hero-affiliation {
+  font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
+  font-size: clamp(0.78rem, 1.6vw, 0.92rem);
+  font-weight: 600;
+  color: rgba(20, 37, 27, 0.92);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 2rem;
 }
 
 .hero-icons {
@@ -264,11 +329,11 @@ section[id] {
 }
 
 .hero-icons a {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(20, 37, 27, 0.8);
   transition: color var(--transition), transform var(--transition);
 }
 .hero-icons a:hover {
-  color: #fff;
+  color: #14251b;
   transform: translateY(-2px);
 }
 
@@ -285,6 +350,12 @@ section[id] {
 @keyframes bounce {
   0%, 100% { transform: translateX(-50%) translateY(0); }
   50%       { transform: translateX(-50%) translateY(8px); }
+}
+
+/* Respect reduced-motion: drop the autoplay video (poster shows through) and stop animation */
+@media (prefers-reduced-motion: reduce) {
+  #hero video { display: none; }
+  .scroll-indicator { animation: none; }
 }
 
 /* =============================================
@@ -320,6 +391,36 @@ section[id] {
   transform: scale(1.04);
 }
 
+/* Figure-style spotlight image: show the whole figure (no crop) on a tinted panel */
+.spotlight-image.is-figure {
+  position: relative;
+  background: var(--color-bg-alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.75rem 1.75rem 2.75rem;
+}
+.spotlight-image.is-figure img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.spotlight-caption {
+  position: absolute;
+  left: 0; right: 0; bottom: 0.9rem;
+  text-align: center;
+  padding: 0 1.25rem;
+  font-size: 0.78rem;
+  font-style: italic;
+  color: var(--color-text-mid);
+}
+
+/* Dark backing for figures that have a black background (seamless framing) */
+.spotlight-image.is-figure.is-dark { background: #0b0e0c; }
+.spotlight-image.is-figure.is-dark .spotlight-caption { color: rgba(255, 255, 255, 0.72); }
+
 .spotlight-content {
   padding: 3rem 3.5rem;
   display: flex;
@@ -343,6 +444,15 @@ section[id] {
   color: var(--color-text-mid);
   line-height: 1.75;
 }
+
+.spotlight-more {
+  margin-top: 1.1rem;
+  align-self: flex-start;
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--color-forest);
+}
+.spotlight-more:hover { color: var(--color-forest-mid); }
 
 /* Methods sub-section */
 .methods-section {
@@ -483,6 +593,7 @@ section[id] {
 }
 
 .news-card-image {
+  position: relative;
   height: 180px;
   overflow: hidden;
   background: var(--color-bg-alt);
@@ -490,6 +601,22 @@ section[id] {
   align-items: center;
   justify-content: center;
 }
+
+/* Tiny image credit overlay (for CC-BY attribution, etc.) */
+.news-card-credit {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 0.62rem;
+  line-height: 1.3;
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.15rem 0.4rem;
+  border-top-left-radius: 5px;
+  max-width: 85%;
+  text-align: right;
+}
+.news-card-credit a { color: inherit; text-decoration: underline; }
 
 .news-card-image img {
   width: 100%;
@@ -758,6 +885,177 @@ h3.pubs-subtitle {
   display: block;
   margin-bottom: 0.75rem;
 }
+
+/* Representative-work list */
+.method-refs {
+  margin: 1.75rem 0 0.5rem;
+}
+.method-refs .refs-label {
+  display: block;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-mid);
+  margin-bottom: 0.8rem;
+}
+.method-reflist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1rem;
+}
+.method-reflist li {
+  display: flex;
+  gap: 1rem;
+  border-left: 2px solid var(--color-border);
+  padding-left: 0.95rem;
+}
+.ref-thumb {
+  flex: 0 0 64px;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ref-thumb img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+.ref-thumb i {
+  font-size: 1.8rem;
+  color: var(--color-forest);
+}
+.ref-role {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-forest);
+  background: rgba(45, 90, 61, 0.09);
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  margin-left: 0.35rem;
+  vertical-align: middle;
+}
+.ref-role--current {
+  color: #8a5a00;
+  background: rgba(176, 120, 20, 0.13);
+}
+
+/* Alternating research-area list on the homepage */
+.research-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+  margin-top: 2.5rem;
+}
+.research-item {
+  display: flex;
+  gap: 1.75rem;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+.research-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.research-thumb {
+  flex: 0 0 240px;
+  width: 240px;
+  height: 240px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--color-bg-alt);
+}
+.research-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.25s ease;
+}
+.research-item:hover .research-thumb img { transform: scale(1.04); }
+.research-item-body { flex: 1; min-width: 0; }
+.research-item-body h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.3rem;
+  transition: color 0.15s ease;
+}
+.research-item:hover .research-item-body h3 { color: var(--color-forest); }
+.research-item-body p {
+  margin: 0 0 0.6rem;
+  color: var(--color-text-mid);
+  font-size: 1rem;
+  line-height: 1.55;
+}
+.research-item-more {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--color-forest);
+}
+@media (max-width: 600px) {
+  .research-item,
+  .research-item:nth-child(even) { flex-direction: row; gap: 1rem; }
+  .research-thumb { flex-basis: 130px; width: 130px; height: 130px; }
+  .research-item-body h3 { font-size: 1.1rem; }
+}
+.ref-body { flex: 1; min-width: 0; }
+
+/* Standardized section figures on the Research & Methods page */
+.methods-page-content section { display: flow-root; }
+.method-fig {
+  float: right;
+  width: 300px;
+  max-width: 42%;
+  margin: 0.35rem 0 1rem 2rem;
+}
+.method-fig img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+.method-fig figcaption {
+  font-size: 0.78rem;
+  font-style: italic;
+  color: var(--color-text-mid);
+  margin-top: 0.45rem;
+  line-height: 1.45;
+}
+.method-refs { clear: both; }
+@media (max-width: 700px) {
+  .method-fig { float: none; width: 100%; max-width: 100%; margin: 1.25rem 0; }
+}
+.ref-cite {
+  color: var(--color-text);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0 0 0.3rem;
+}
+.ref-cite b { font-weight: 700; }
+.ref-desc {
+  color: var(--color-text-mid);
+  font-size: 0.92rem;
+  line-height: 1.55;
+  margin: 0 0 0.45rem;
+}
+.ref-links {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 1.1rem;
+}
+.ref-links a {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--color-forest);
+}
+.ref-links a:hover { color: var(--color-forest-mid); }
+.ref-links a i { font-size: 0.78rem; margin-right: 0.25rem; }
 
 /* =============================================
    Responsive

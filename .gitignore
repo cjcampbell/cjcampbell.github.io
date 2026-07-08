@@ -1,3 +1,7 @@
 
 testTable.html
 .DS_Store
+.Rproj.user
+.claude/*
+CLAUDE.md
+*.Rproj

@@ -9,6 +9,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Methods — CJ Campbell</title>
+    <meta name="description" content="Methodological approaches used by CJ Campbell: spatial modeling, biodiversity informatics, endogenous markers, and open-source software.">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <meta property="og:title" content="Methods — CJ Campbell">
+    <meta property="og:description" content="Spatial modeling, biodiversity informatics, endogenous markers, and open-source software.">
+    <meta property="og:image" content="https://cjcampbell.github.io/images/og_card.jpg">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   </head>
@@ -22,7 +28,8 @@
         <span></span><span></span><span></span>
       </label>
       <ul class="nav-links">
-        <li><a href="index.html#research">Research</a></li>
+        <li class="nav-back"><a href="index.html" aria-label="Home"><span class="bat-glyph"></span></a></li>
+        <li><a href="methods.html">Research</a></li>
         <li><a href="pubs.html">Publications / CV</a></li>
         <li><a href="news.html">News</a></li>
         <li><a href="index.html#about">About &amp; Contact</a></li>
@@ -32,7 +39,7 @@
     <!-- Page header -->
     <div class="page-header">
       <div class="inner">
-        <h1>Methodological Approaches</h1>
+        <h1>Research &amp; Methods</h1>
       </div>
     </div>
 
@@ -40,65 +47,509 @@
       <div class="inner">
 
 
-      <p>I leverage a broad suite of methodological approaches to tackle pressing conservation challenges, with a particular focus on developing the methods needed to conduct research in under-studied systems and taxa where creative approaches are needed.</p>
+      <p>My work pairs pressing conservation questions with the quantitative methods needed to answer them, often in systems and taxa that would otherwise go understudied. Below, my main research areas are followed by the methodological approaches that cut across them.</p>
+
+      <h2 class="section-title">Research Areas</h2>
+
+      <hr>
+      <section id="research-monitoring">
+        <i class="fas fa-satellite-dish method-icon-large"></i>
+        <h3>Remote Biodiversity Monitoring</h3>
+        <figure class="method-fig">
+          <img src="images/emergence_by_night.png" alt="Video line-crossing counts of nightly bat emergences across two nights">
+          <figcaption>Video line-crossing counts resolve the timing and intensity of nightly bat emergences (Bracken Cave, TX).</figcaption>
+        </figure>
+        <p>I develop remote, non-invasive approaches to monitor biodiversity and animal activity at scales that traditional field methods cannot reach, from passive acoustic sensing and bioacoustics to computer vision and weather-surveillance radar. I am now extending radar- and computer-vision&ndash;based methods to quantify animal movement and cave emergences across broad landscapes, a rapidly advancing frontier for migration ecology and conservation. This work builds on my role with the Limelight Rainforest team, winners of the $5M XPRIZE Rainforest grand prize, where I built a human-in-the-loop machine learning pipeline for bat bioacoustics and helped link canopy biodiversity from eDNA and acoustics to ecosystem structure and services.</p>
+        <div class="method-refs">
+          <span class="refs-label">Representative work</span>
+          <ul class="method-reflist">
+            <li>
+              <div class="ref-thumb"><i class="fas fa-trophy"></i></div>
+              <div class="ref-body">
+                <p class="ref-cite"><b>Remote rainforest inventorying and human-in-the-loop ML for bat biodiversity survey</b> &mdash; Team Limelight. <span class="ref-role ref-role--current">XPRIZE grand-prize winner</span></p>
+                <p class="ref-desc">I led bat bioacoustics and bioinformatics for Team Limelight (Limelight Rainforest), grand-prize winner of the $5M XPRIZE Rainforest competition (2024). A manuscript is in preparation.</p>
+                <span class="ref-links"><a href="https://www.xprize.org/prizes/rainforest" target="_blank" rel="noopener"><i class="fas fa-trophy"></i>XPRIZE Rainforest</a> <a href="https://www.teamwaponi.org" target="_blank" rel="noopener"><i class="fas fa-link"></i>Team Limelight</a></span>
+              </div>
+            </li>
+            <li>
+              <div class="ref-thumb"><img src="images/labo_solid.svg" alt=""></div>
+              <div class="ref-body">
+                <p class="ref-cite"><b>Campbell, CJ</b>; et al. (2025). Migratory strategy is a key factor driving interactions at wind energy facilities in at-risk North American bats. <jn>Ecology Letters</jn> 28:e70202.</p>
+                <p class="ref-desc">Combined large-scale distribution and movement data across at-risk North American bats to show that migratory strategy governs their overlap with, and fatality risk at, wind-energy facilities.</p>
+                <span class="ref-links"><a href="https://doi.org/10.1111/ele.70202" target="_blank" rel="noopener"><i class="fas fa-link"></i>Article</a> <a href="docs/2025 - Ecology Letters - Migratory Strategy is a Key Factor Driving Interactions at Wind Energy Facilities in.pdf"><i class="fas fa-file-pdf"></i>PDF</a></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="method-refs">
+          <span class="refs-label">Current projects</span>
+          <ul class="method-reflist">
+            <li>
+              <div class="ref-thumb"><i class="fas fa-broadcast-tower"></i></div>
+              <div class="ref-body">
+                <p class="ref-cite"><b>Weather-surveillance radar to monitor mass-emerging bat activity</b>. <span class="ref-role ref-role--current">Current project</span></p>
+                <p class="ref-desc">Using weather-surveillance radar to detect and quantify the activity of mass-emerging bat colonies across broad regions.</p>
+              </div>
+            </li>
+            <li>
+              <div class="ref-thumb"><i class="fas fa-video"></i></div>
+              <div class="ref-body">
+                <p class="ref-cite"><b>Bioacoustics and computer-vision monitoring of bat emergence dynamics</b>. <span class="ref-role ref-role--current">Current project</span></p>
+                <p class="ref-desc">Combining acoustic recordings and computer-vision video counts to resolve the timing and intensity of nightly bat emergences.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <hr>
+      <section id="research-biodiversity">
+        <i class="fas fa-network-wired method-icon-large"></i>
+        <h3>Biodiversity Informatics</h3>
+        <figure class="method-fig">
+          <img src="images/biad051fig2-cropped.jpeg" style="background:#0b0e0c;" alt="iNaturalist identifier specialization and global identification networks">
+          <figcaption>Identifier specialization and global identification networks on iNaturalist (Campbell et al. 2023).</figcaption>
+        </figure>
+        <p>The volume of openly accessible biodiversity data is growing exponentially, but coverage remains deeply uneven across taxa, regions, and time. I develop methods and tools to harness participatory science platforms like iNaturalist, diagnose biases in global biodiversity databases, and fill knowledge gaps in under-studied regions. A central future direction is quantifying global biodiversity sampling completeness across the Global Biodiversity Information Facility (GBIF), to identify where evidence-based conservation policy, including ambitious frameworks like the Kunming-Montreal 30x30 target, is most constrained by missing data.</p>
+        <div class="method-refs">
+          <span class="refs-label">Representative work</span>
+          <ul class="method-reflist">
+            <li>
+              <div class="ref-thumb"><img src="images/inaturalist-svgrepo-com.svg" alt=""></div>
+              <div class="ref-body">
+                <p class="ref-cite"><b>Campbell, CJ</b>; et al. (2023). Identifying the identifiers: how iNaturalist facilitates collaborative, research-relevant data generation. <jn>BioScience</jn> 73(7):533&ndash;541.</p>
+                <p class="ref-desc">Showed that a small set of highly active, expert users drives most research-grade identifications on iNaturalist, a pattern that matters for how community-science data are used.</p>
+                <span class="ref-links"><a href="https://doi.org/10.1093/biosci/biad051" target="_blank" rel="noopener"><i class="fas fa-link"></i>Article</a> <a href="docs/Campbell et al. - 2023 - Identifying the identifiers.pdf"><i class="fas fa-file-pdf"></i>PDF</a></span>
+              </div>
+            </li>
+            <li>
+              <div class="ref-thumb"><img src="images/thady_panelC.png" alt=""></div>
+              <div class="ref-body">
+                <p class="ref-cite">Grady, E; <b>Campbell, CJ</b>; Callaghan, C; Guralnick, R. (2026). iNaturalist users exhibit distinct spatiotemporal sampling preferences, with implications for biodiversity science and project planning. <jn>Citizen Science: Theory and Practice</jn> 11(1):3.</p>
+                <p class="ref-desc">Found that when and where users choose to record wildlife systematically shapes the biodiversity datasets those records become.</p>
+                <span class="ref-links"><a href="https://doi.org/10.5334/cstp.868" target="_blank" rel="noopener"><i class="fas fa-link"></i>Article</a></span>
+              </div>
+            </li>
+            <li>
+              <div class="ref-thumb"><img src="images/big-data-svgrepo-com.svg" alt=""></div>
+              <div class="ref-body">
+                <p class="ref-cite">McCleery, R; Guralnick, R; Beatty, M; Belitz, M; <b>Campbell, CJ</b>; et al. (2023). Uniting experiments and big data to advance ecology and conservation. <jn>Trends in Ecology &amp; Evolution</jn> 38(10).</p>
+                <p class="ref-desc">Set out how controlled experiments and large observational datasets can complement each other rather than compete.</p>
+                <span class="ref-links"><a href="https://doi.org/10.1016/j.tree.2023.05.010" target="_blank" rel="noopener"><i class="fas fa-link"></i>Article</a> <a href="docs/McCleery et al. - 2023 - Uniting Experiments and Big Data to advance ecolog.pdf"><i class="fas fa-file-pdf"></i>PDF</a></span>
+              </div>
+            </li>          </ul>
+        </div>
+      </section>
+
+      <hr>
+      <section id="research-aeroecology">
+        <i class="fas fa-feather-alt method-icon-large"></i>
+        <h3>Aeroecology &amp; Migration</h3>
+        <figure class="method-fig">
+          <img src="images/ecollet-f1.jpg" alt="Multi-step modeling framework for inferring migratory strategy from endogenous markers">
+          <figcaption>A multi-step framework for inferring population-level migratory strategy from endogenous markers.</figcaption>
+        </figure>
+        <p>Seasonal animal migration is a globally ubiquitous process that governs ecosystem structure and function, linking distant regions through the exchange of genes, energy, and disease. My research spans birds, bats, and insects to reveal the cryptic dynamics of migration and its consequences for wildlife conservation. Transitioning to renewable energy is essential to limit the worst effects of climate change, but wind energy development disproportionately affects migratory species. I study how migratory behavior drives fatality risk at wind energy facilities, and I develop tools to target interventions toward the times and places when migrants are most present.</p>
+        <div class="method-refs">
+          <span class="refs-label">Representative work</span>
+          <ul class="method-reflist">
+            <li>
+              <div class="ref-thumb"><img src="images/labo_solid.svg" alt=""></div>
+              <div class="ref-body">
+                <p class="ref-cite"><b>Campbell, CJ</b>; et al. (2025). Migratory strategy is a key factor driving interactions at wind energy facilities in at-risk North American bats. <jn>Ecology Letters</jn> 28:e70202.</p>
+                <p class="ref-desc">Showed that how a bat migrates, not just where it lives, governs its overlap with and fatality risk at wind-energy facilities.</p>
+                <span class="ref-links"><a href="https://doi.org/10.1111/ele.70202" target="_blank" rel="noopener"><i class="fas fa-link"></i>Article</a> <a href="docs/2025 - Ecology Letters - Migratory Strategy is a Key Factor Driving Interactions at Wind Energy Facilities in.pdf"><i class="fas fa-file-pdf"></i>PDF</a></span>
+              </div>
+            </li>
+            <li>
+              <div class="ref-thumb"><img src="images/laci.svg" alt=""></div>
+              <div class="ref-body">
+                <p class="ref-cite">Wilson, J; True, M; <b>Campbell, CJ</b>. (2025). Autumn migration to higher latitudes in Seminole bats (<i>Lasiurus seminolus</i>) redefines seasonal ranges. <jn>Ecology &amp; Evolution</jn> 15:e71657.</p>
+                <p class="ref-desc">Used stable isotopes and fatality data to show that Seminole bats head north in autumn, redrawing the species' known range.</p>
+                <span class="ref-links"><a href="https://doi.org/10.1002/ece3.71657" target="_blank" rel="noopener"><i class="fas fa-link"></i>Article</a> <a href="docs/2025 - Ecology and Evolution - Autumn Migration to Higher Latitudes in Seminole Bats Lasiurus seminolus.pdf"><i class="fas fa-file-pdf"></i>PDF</a></span>
+              </div>
+            </li>
+            <li>
+              <div class="ref-thumb"><img src="images/gallinago.svg" alt=""></div>
+              <div class="ref-body">
+                <p class="ref-cite">Carpenter, B; <b>Campbell, CJ</b>; Fanning, A; McBride, M. (2024). Extensive migratory mixing of wintering Wilson's snipe. <jn>Ornithological Applications</jn> duae064.</p>
+                <p class="ref-desc">Found that wintering snipe mix widely across breeding origins, so monitoring and management need international coordination.</p>
+                <span class="ref-links"><a href="https://doi.org/10.1093/ornithapp/duae064" target="_blank" rel="noopener"><i class="fas fa-link"></i>Article</a> <a href="docs/2024 - Carpenter and Campbell - OrnApp - Snipe.pdf"><i class="fas fa-file-pdf"></i>PDF</a></span>
+              </div>
+            </li>
+            <li>
+              <div class="ref-thumb"><img src="images/turbine.svg" alt=""></div>
+              <div class="ref-body">
+                <p class="ref-cite">Katzner, TE; Nelson, DM; <b>Campbell, CJ</b>; et al. (2019). Wind energy: an ecological challenge. <jn>Science</jn> 366(6470):1206&ndash;1207.</p>
+                <p class="ref-desc">A Science policy forum laying out the ecological stakes of scaling wind energy for migratory wildlife.</p>
+                <span class="ref-links"><a href="https://doi.org/10.1126/science.aaz9989" target="_blank" rel="noopener"><i class="fas fa-link"></i>Article</a> <a href="docs/windEnergyEcologicalChallenge.pdf"><i class="fas fa-file-pdf"></i>PDF</a></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <hr>
+      <section id="research-conservation">
+        <i class="fas fa-hand-holding-heart method-icon-large"></i>
+        <h3>Science-to-Conservation Linkages</h3>
+        <figure class="method-fig">
+          <img src="images/state_of_bats.jpg" alt="North American bats by phylogeny and conservation status">
+          <figcaption>North America's bats arranged by phylogeny and conservation status (Adams et al. 2024).</figcaption>
+        </figure>
+        <p>Research protects biodiversity only when it reaches the people making decisions. I work to close that gap by translating quantitative findings into practical guidance for management and policy. This includes targeting wind-energy curtailment toward the times and places migratory bats are most at risk, guiding the management of power-line corridors, synthesizing the conservation status of North America's bats, making the case for conserving whole species assemblages rather than one at a time, and building the cross-jurisdiction coordination that wide-ranging, migratory species require.</p>
+        <div class="method-refs">
+          <span class="refs-label">Representative work</span>
+          <ul class="method-reflist">
+            <li>
+              <div class="ref-thumb"><img src="images/Leptonycteris yerbabuenae.svg" alt=""></div>
+              <div class="ref-body">
+                <p class="ref-cite">Adams, AM; Trujillo, LA; <b>Campbell, CJ</b>; et al. (2024). The State of the Bats in North America. <jn>Annals of the New York Academy of Sciences</jn> 2024:1&ndash;14.</p>
+                <p class="ref-desc">Synthesized the conservation status of bats across Canada, the United States, and Mexico to guide continental priorities.</p>
+                <span class="ref-links"><a href="https://doi.org/10.1111/nyas.15225" target="_blank" rel="noopener"><i class="fas fa-link"></i>Article</a> <a href="docs/Annals of the New York Academy of Sciences - 2024 - Adams - The state of the bats in North America.pdf"><i class="fas fa-file-pdf"></i>PDF</a></span>
+              </div>
+            </li>
+            <li>
+              <div class="ref-thumb"><img src="images/noun-tower-1987601.svg" alt=""></div>
+              <div class="ref-body">
+                <p class="ref-cite"><b>Campbell, CJ</b>; et al. (2024). Maximizing benefits to bat populations through management of power line corridors. <jn>Ecological Solutions and Evidence</jn> 5(4):e12392.</p>
+                <p class="ref-desc">Translated bat ecology into concrete guidance for managing power-line corridors as habitat.</p>
+                <span class="ref-links"><a href="https://doi.org/10.1002/2688-8319.12392" target="_blank" rel="noopener"><i class="fas fa-link"></i>Article</a> <a href="docs/Ecol Sol and Evidence - 2024 - Campbell - Maximizing benefits to bat populations through management of power line corridors.pdf"><i class="fas fa-file-pdf"></i>PDF</a></span>
+              </div>
+            </li>
+            <li>
+              <div class="ref-thumb"><img src="images/turbine.svg" alt=""></div>
+              <div class="ref-body">
+                <p class="ref-cite">Katzner, TE; Nelson, DM; <b>Campbell, CJ</b>; et al. (2019). Wind energy: an ecological challenge. <jn>Science</jn> 366(6470):1206&ndash;1207.</p>
+                <p class="ref-desc">Set the ecological stakes of the renewable-energy transition for migratory wildlife on the record in Science.</p>
+                <span class="ref-links"><a href="https://doi.org/10.1126/science.aaz9989" target="_blank" rel="noopener"><i class="fas fa-link"></i>Article</a> <a href="docs/windEnergyEcologicalChallenge.pdf"><i class="fas fa-file-pdf"></i>PDF</a></span>
+              </div>
+            </li>
+            <li>
+              <div class="ref-thumb"><img src="images/bryde.svg" alt=""></div>
+              <div class="ref-body">
+                <p class="ref-cite">Roman, J; Altman, I; Dunphy-Daly, M; <b>Campbell, C</b>; et al. (2013). The Marine Mammal Protection Act at 40. <jn>Annals of the New York Academy of Sciences</jn> 1286:29&ndash;49.</p>
+                <p class="ref-desc">Reviewed the status, recovery, and future of U.S. marine mammals four decades after a landmark conservation law.</p>
+                <span class="ref-links"><a href="https://doi.org/10.1111/nyas.12040" target="_blank" rel="noopener"><i class="fas fa-link"></i>Article</a> <a href="docs/Roman et al. - 2013 - The Marine Mammal Protection Act at 40 status, recovery, and future of U.S. marine mammals.pdf"><i class="fas fa-file-pdf"></i>PDF</a></span>
+              </div>
+            </li>
+            <li>
+              <div class="ref-thumb"><img src="images/assemblage butterflies.svg" alt=""></div>
+              <div class="ref-body">
+                <p class="ref-cite">Belitz, M; <b>Campbell, CJ</b>; et al. (2025). A case for community assemblage-level conservation to address the biodiversity crisis. <jn>Nature Reviews Biodiversity</jn> 1:134&ndash;143.</p>
+                <p class="ref-desc">Argued for protecting whole communities of species, not just one at a time, as a scalable strategy for conservation policy and practice.</p>
+                <span class="ref-links"><a href="https://doi.org/10.1038/s44358-024-00014-9" target="_blank" rel="noopener"><i class="fas fa-link"></i>Article</a> <a href="docs/2025 - Belitz - NRBD - Assemblage level conservation.pdf"><i class="fas fa-file-pdf"></i>PDF</a></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <hr>
+      <section id="research-bats">
+        <i class="fas fa-moon method-icon-large"></i>
+        <h3>Bat Ecology &amp; Natural History</h3>
+        <figure class="method-fig">
+          <img src="images/hoary_bat_brockfenton.jpg" alt="Hoary bat in flight">
+          <figcaption>A hoary bat (<i>Lasiurus cinereus</i>) in flight. Photo: Brock Fenton.</figcaption>
+        </figure>
+        <p>Bats are among the most diverse and least-studied groups of mammals, and much of their basic natural history remains undescribed. I work to fill those gaps: resolving migratory routes and seasonal ranges, roosting and emergence behavior, diet and trophic ecology, and how bats respond to a changing climate and emerging threats like white-nose syndrome. To do this, I integrate data across scales, from historical museum specimens to community-science observations and automated, video-based counts of nightly emergences.</p>
+        <div class="method-refs">
+          <span class="refs-label">Representative work</span>
+          <ul class="method-reflist">
+            <li>
+              <div class="ref-thumb"><img src="images/epfu.svg" alt=""></div>
+              <div class="ref-body">
+                <p class="ref-cite"><b>Campbell, CJ</b>; et al. (2022). White-nose syndrome pathogen <i>Pseudogymnoascus destructans</i> detected on migratory bats during summer and autumn. <jn>Journal of Wildlife Diseases</jn>.</p>
+                <p class="ref-desc">Detected the white-nose syndrome pathogen on migratory bats outside winter, including hoary bats, widening where the disease may spread.</p>
+                <span class="ref-links"><a href="https://doi.org/10.7589/JWD-D-21-00160" target="_blank" rel="noopener"><i class="fas fa-link"></i>Article</a> <a href="docs/Campbell et al. - 2022 - Pd detection.pdf"><i class="fas fa-file-pdf"></i>PDF</a></span>
+              </div>
+            </li>
+            <li>
+              <div class="ref-thumb"><img src="images/lano_greys.svg" alt=""></div>
+              <div class="ref-body">
+                <p class="ref-cite">Smith, LM; Gore, JA; Doonan, TJ; <b>Campbell, CJ</b>. (2022). Tricolored bats at a southern range edge exhibit partial migration northward in autumn. <jn>Movement Ecology</jn> 10(1):1&ndash;13.</p>
+                <p class="ref-desc">Found that only part of a southern tricolored-bat population migrates north in autumn, a subtlety that matters for management.</p>
+                <span class="ref-links"><a href="https://doi.org/10.1186/s40462-022-00358-x" target="_blank" rel="noopener"><i class="fas fa-link"></i>Article</a> <a href="docs/Smith et al. - 2022 - Tricolored bats at a southern range edge exhibit p.pdf"><i class="fas fa-file-pdf"></i>PDF</a></span>
+              </div>
+            </li>
+            <li>
+              <div class="ref-thumb"><img src="images/laci.svg" alt=""></div>
+              <div class="ref-body">
+                <p class="ref-cite"><b>Campbell, CJ</b>; Nelson, DM; Ogawa, NO; Chikaraishi, Y; Ohkouchi, N. (2017). Trophic position and dietary breadth of bats revealed by nitrogen isotopic composition of amino acids. <jn>Scientific Reports</jn> 7:15932.</p>
+                <p class="ref-desc">Used amino-acid nitrogen isotopes to read the trophic position and dietary breadth of bats from their tissues.</p>
+                <span class="ref-links"><a href="https://doi.org/10.1038/s41598-017-15440-3" target="_blank" rel="noopener"><i class="fas fa-link"></i>Article</a> <a href="docs/Campbell et al. - 2017 - Trophic position and dietary breadth of bats revea.pdf"><i class="fas fa-file-pdf"></i>PDF</a></span>
+              </div>
+            </li>
+            <li>
+              <div class="ref-thumb"><img src="images/Leptonycteris yerbabuenae.svg" alt=""></div>
+              <div class="ref-body">
+                <p class="ref-cite">Adams, AM; Trujillo, LA; <b>Campbell, CJ</b>; et al. (2024). The State of the Bats in North America. <jn>Annals of the New York Academy of Sciences</jn> 2024:1&ndash;14.</p>
+                <p class="ref-desc">A continental synthesis of bat diversity, threats, and conservation status across North America.</p>
+                <span class="ref-links"><a href="https://doi.org/10.1111/nyas.15225" target="_blank" rel="noopener"><i class="fas fa-link"></i>Article</a> <a href="docs/Annals of the New York Academy of Sciences - 2024 - Adams - The state of the bats in North America.pdf"><i class="fas fa-file-pdf"></i>PDF</a></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <h2 class="section-title" style="margin-top:3.5rem;">Methodological Approaches</h2>
 
       <hr>
       <section id="SDM">
         <i class="fas fa-globe method-icon-large"></i>
         <h3>Spatial Modeling</h3>
+        <figure class="method-fig">
+          <img src="images/animatedMigration.gif" style="background:#000;" alt="Animated species distribution model across the annual cycle">
+          <figcaption>A species distribution model projected across the annual cycle to reveal population-level migration.</figcaption>
+        </figure>
         <p>Understanding how organisms interact with, and are limited by, their environment is a central question of ecology. Correlative species distribution models (SDM) can be used to project the expected past, current, or future geographic distributions of a species based on the environmental conditions where they are known to occur. I am particularly interested in leveraging big data approaches to understand and identify animal migration at the population level given shifts in seasonal distributions.</p>
-        <br>
-        <img src="images/animatedMigration.gif" style="max-width:60%; margin: 1rem auto; background:black;" alt="Animated migration model">
+        <div class="method-refs">
+          <span class="refs-label">Representative work</span>
+          <ul class="method-reflist">
+            <li>
+              <div class="ref-thumb"><img src="images/actias.svg" alt=""></div>
+              <div class="ref-body">
+                <p class="ref-cite">Rubin, J; <b>Campbell, CJ</b>; et al. (2025). Strong bat predation and weak environmental constraints predict longer moth tails. <jn>Proceedings of the Royal Society B</jn> 292(2046).</p>
+                <p class="ref-desc">Built species distribution models for 157 of the world's insectivorous bats to map global bat-predator richness, then used it to show that bat predation likely drove the evolution of the elaborate hindwing tails of <i>Actias</i> moon moths.</p>
+                <span class="ref-links">
+                  <a href="https://doi.org/10.1098/rspb.2024.2824" target="_blank" rel="noopener"><i class="fas fa-link"></i>Article</a>
+                  <a href="docs/rubin-et-al-strong-bat-predation-and-weak-environmental-constraints-predict-longer-moth-tails.pdf"><i class="fas fa-file-pdf"></i>PDF</a>
+                  <a href="https://github.com/cjcampbell/Rubin-et-al---Moon-moth-bat-predator-richness" target="_blank" rel="noopener"><i class="fab fa-github"></i>Code</a>
+                </span>
+              </div>
+            </li>
+            <li>
+              <div class="ref-thumb"><img src="images/labo_solid.svg" alt=""></div>
+              <div class="ref-body">
+                <p class="ref-cite"><b>Campbell, CJ</b>; et al. (2025). Migratory strategy is a key factor driving interactions at wind energy facilities in at-risk North American bats. <jn>Ecology Letters</jn> 28:e70202.</p>
+                <p class="ref-desc">Modeled the seasonal distributions and movements of at-risk North American bats and showed that migratory strategy, not geographic range alone, governs their overlap with, and fatality risk at, wind-energy facilities.</p>
+                <span class="ref-links">
+                  <a href="https://doi.org/10.1111/ele.70202" target="_blank" rel="noopener"><i class="fas fa-link"></i>Article</a>
+                  <a href="docs/2025 - Ecology Letters - Migratory Strategy is a Key Factor Driving Interactions at Wind Energy Facilities in.pdf"><i class="fas fa-file-pdf"></i>PDF</a>
+                </span>
+              </div>
+            </li>
+            <li>
+              <div class="ref-thumb"><img src="images/laci.svg" alt=""></div>
+              <div class="ref-body">
+                <p class="ref-cite">Wilson, J; True, M; <b>Campbell, CJ</b>. (2025). Autumn migration to higher latitudes in Seminole bats (<i>Lasiurus seminolus</i>) redefines seasonal ranges. <jn>Ecology &amp; Evolution</jn> 15:e71657.</p>
+                <p class="ref-desc">Used stable-isotope and wind-energy fatality data to show that Seminole bats migrate to higher latitudes in autumn, redrawing the species' known seasonal range.</p>
+                <span class="ref-links">
+                  <a href="https://doi.org/10.1002/ece3.71657" target="_blank" rel="noopener"><i class="fas fa-link"></i>Article</a>
+                  <a href="docs/2025 - Ecology and Evolution - Autumn Migration to Higher Latitudes in Seminole Bats Lasiurus seminolus.pdf"><i class="fas fa-file-pdf"></i>PDF</a>
+                </span>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <hr>
       <section id="data">
-        <i class="fas fa-database method-icon-large"></i>
-        <h3>Biodiversity Informatics</h3>
+        <i class="fas fa-chart-line method-icon-large"></i>
+        <h3>Data Science</h3>
+        <figure class="method-fig">
+          <img src="images/n_total_Species.png" alt="Global map of species richness">
+          <figcaption>Global species richness mapped from large-scale biodiversity data.</figcaption>
+        </figure>
         <p>The availability of biodiversity data is increasing exponentially. I research its generation and develop methods to help integrate data from multiple sources and account for data biases.</p>
-        <br>
-        <img src="images/biad051fig2.jpeg" style="max-width:400px; margin: 1rem 0;" alt="iNaturalist identifiers figure">
-        <p>Participatory scientists at iNaturalist.org generate millions of research-grade biodiversity records through a system in which users collectively reach consensus on taxonomic identification. We explored how this process occurs and found that most identifications are driven by a small subset of highly active, expert users.</p>
-        <p>Campbell, C. J., et al. "Identifying the identifiers: How iNaturalist facilitates collaborative, research-relevant data generation and why it matters for biodiversity science." <i>BioScience</i> 73, no. 7 (2023): 533–541. [<a href="https://doi.org/10.1093/biosci/biad051">link</a>]</p>
+        <div class="method-refs">
+          <span class="refs-label">Representative work</span>
+          <ul class="method-reflist">
+            <li>
+              <div class="ref-thumb"><img src="images/inaturalist-svgrepo-com.svg" alt=""></div>
+              <div class="ref-body">
+                <p class="ref-cite">Grady, E; <b>Campbell, CJ</b>; Callaghan, C; Guralnick, R. (2026). iNaturalist users exhibit distinct spatiotemporal sampling preferences, with implications for biodiversity science and project planning. <jn>Citizen Science: Theory and Practice</jn> 11(1):3.</p>
+                <p class="ref-desc">Found that iNaturalist users have distinct spatiotemporal sampling preferences that shape where and when biodiversity data accumulate, with practical implications for project design and bias correction.</p>
+                <span class="ref-links">
+                  <a href="https://doi.org/10.5334/cstp.868" target="_blank" rel="noopener"><i class="fas fa-link"></i>Article</a>
+                </span>
+              </div>
+            </li>
+            <li>
+              <div class="ref-thumb"><img src="images/idec_butterflies.jpg" alt=""></div>
+              <div class="ref-body">
+                <p class="ref-cite">Idec, J; <b>Campbell, CJ</b>; Belitz, M; Vinod Anand, A; Guralnick, R. (2025). Using iNaturalist to estimate trait and climate drivers of daily activity patterns in temperate butterflies. <jn>PLOS One</jn> 20(11):e0335856.</p>
+                <p class="ref-desc">Used iNaturalist observations to estimate how species traits and climate drive the daily activity patterns of temperate butterflies.</p>
+                <span class="ref-links">
+                  <a href="https://doi.org/10.1371/journal.pone.0335856" target="_blank" rel="noopener"><i class="fas fa-link"></i>Article</a>
+                </span>
+              </div>
+            </li>
+            <li>
+              <div class="ref-thumb"><img src="images/big-data-svgrepo-com.svg" alt=""></div>
+              <div class="ref-body">
+                <p class="ref-cite">McCleery, R; Guralnick, R; Beatty, M; Belitz, M; <b>Campbell, CJ</b>; et al. (2023). Uniting experiments and big data to advance ecology and conservation. <jn>Trends in Ecology &amp; Evolution</jn> 38(10).</p>
+                <p class="ref-desc">Made the case for uniting controlled experiments with big observational data, showing how the two paradigms complement each other to advance ecology and conservation.</p>
+                <span class="ref-links">
+                  <a href="https://doi.org/10.1016/j.tree.2023.05.010" target="_blank" rel="noopener"><i class="fas fa-link"></i>Article</a>
+                  <a href="docs/McCleery et al. - 2023 - Uniting Experiments and Big Data to advance ecolog.pdf"><i class="fas fa-file-pdf"></i>PDF</a>
+                </span>
+              </div>
+            </li>
+            <li>
+              <div class="ref-thumb"><img src="images/assemblage butterflies.svg" alt=""></div>
+              <div class="ref-body">
+                <p class="ref-cite">Belitz, M; <b>Campbell, CJ</b>; et al. (2025). A case for community assemblage-level conservation to address the biodiversity crisis. <jn>Nature Reviews Biodiversity</jn> 1:134&ndash;143.</p>
+                <p class="ref-desc">Argued for community assemblage&ndash;level conservation as a framework for addressing the biodiversity crisis, moving beyond single-species approaches.</p>
+                <span class="ref-links">
+                  <a href="https://doi.org/10.1038/s44358-024-00014-9" target="_blank" rel="noopener"><i class="fas fa-link"></i>Article</a>
+                  <a href="docs/2025 - Belitz - NRBD - Assemblage level conservation.pdf"><i class="fas fa-file-pdf"></i>PDF</a>
+                </span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <hr>
+      <section id="ml">
+        <i class="fas fa-project-diagram method-icon-large"></i>
+        <h3>Machine Learning &amp; Quantitative Methods</h3>
+        <figure class="method-fig">
+          <img src="images/cv_bat_tracking.jpg" alt="Computer-vision detection and counting of bats in flight">
+          <figcaption>Computer-vision detection with line-crossing counts quantifies a Mexican free-tailed bat emergence in real time (Bracken Cave, TX).</figcaption>
+        </figure>
+        <p>Modern ecology increasingly depends on extracting reliable inference from data that are large, noisy, and imperfectly sampled. I build machine-learning and statistical models to meet that challenge. This includes computer-vision pipelines that detect and count individual animals in video (for example, quantifying bat emergences frame by frame), and human-in-the-loop classifiers for bioacoustic data, developed as part of the XPRIZE Rainforest grand prize&ndash;winning Limelight Rainforest team. I pair these with hierarchical and Bayesian models that make uncertainty and sampling structure explicit rather than assumed.</p>
+        <div class="method-refs">
+          <span class="refs-label">Representative work</span>
+          <ul class="method-reflist">
+            <li>
+              <div class="ref-thumb"><img src="images/location.svg" alt=""></div>
+              <div class="ref-body">
+                <p class="ref-cite"><b>Campbell, CJ</b>; Fitzpatrick, MC; Vander Zanden, H; Nelson, DM. (2020). Advancing interpretation of stable isotope assignment maps. <jn>Animal Migration</jn>.</p>
+                <p class="ref-desc">Developed and validated methods to compare and summarize probabilistic origin assignments, released as the open-source isocat R package.</p>
+                <span class="ref-links"><a href="https://doi.org/10.1515/ami-2020-0004" target="_blank" rel="noopener"><i class="fas fa-link"></i>Article</a> <a href="docs/Campbell et al. - 2020 - Advancing interpretation of stable isotope assignm.pdf"><i class="fas fa-file-pdf"></i>PDF</a> <a href="https://github.com/cjcampbell/isocat" target="_blank" rel="noopener"><i class="fab fa-github"></i>Code</a></span>
+              </div>
+            </li>
+            <li>
+              <div class="ref-thumb"><img src="images/actias.svg" alt=""></div>
+              <div class="ref-body">
+                <p class="ref-cite">Rubin, J; <b>Campbell, CJ</b>; et al. (2025). Strong bat predation and weak environmental constraints predict longer moth tails. <jn>Proceedings of the Royal Society B</jn> 292(2046).</p>
+                <p class="ref-desc">Fit species distribution models for 157 insectivorous bats to build a global map of predator richness for downstream analysis.</p>
+                <span class="ref-links"><a href="https://doi.org/10.1098/rspb.2024.2824" target="_blank" rel="noopener"><i class="fas fa-link"></i>Article</a> <a href="docs/rubin-et-al-strong-bat-predation-and-weak-environmental-constraints-predict-longer-moth-tails.pdf"><i class="fas fa-file-pdf"></i>PDF</a> <a href="https://github.com/cjcampbell/Rubin-et-al---Moon-moth-bat-predator-richness" target="_blank" rel="noopener"><i class="fab fa-github"></i>Code</a></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <hr>
+      <section id="monitoring">
+        <i class="fas fa-microphone method-icon-large"></i>
+        <h3>Remote Monitoring &amp; Bioacoustics</h3>
+        <figure class="method-fig">
+          <img src="images/spectrogram_emergence.jpg" alt="Spectrograms of a bat emergence recorded over the course of an evening">
+          <figcaption>Full-spectrum acoustic recordings capture the building intensity of a bat emergence across an evening, from near-silence to peak activity.</figcaption>
+        </figure>
+        <p>Understanding wildlife at scale means observing animals where and when traditional field methods fall short. I develop and apply remote, non-invasive monitoring (passive acoustic sensing and bioacoustic detection, camera- and video-based counting, and weather-surveillance radar) to measure activity, abundance, and movement across broad areas and long time spans. These tools turn otherwise-inaccessible phenomena, from nightly cave emergences to continental-scale aerial movements, into data we can analyze.</p>
+        <div class="method-refs">
+          <span class="refs-label">Current projects</span>
+          <ul class="method-reflist">
+            <li>
+              <div class="ref-thumb"><i class="fas fa-wave-square"></i></div>
+              <div class="ref-body">
+                <p class="ref-cite"><b>Passive acoustic monitoring of bat emergence dynamics</b>. <span class="ref-role ref-role--current">Current project</span></p>
+                <p class="ref-desc">Using full-spectrum recordings to characterize the timing and intensity of nightly bat emergences, from near-silence to peak activity.</p>
+              </div>
+            </li>
+            <li>
+              <div class="ref-thumb"><i class="fas fa-satellite-dish"></i></div>
+              <div class="ref-body">
+                <p class="ref-cite"><b>Weather-surveillance radar for broad-scale aerial movement</b>. <span class="ref-role ref-role--current">Current project</span></p>
+                <p class="ref-desc">Adapting radar remote sensing to observe the movement of bats and other aerial wildlife across broad regions and long time spans.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <hr>
       <section id="SIA">
         <i class="fas fa-atom method-icon-large"></i>
-        <h3>Endogenous Markers</h3>
-        <img src="images/ex_dD_odds.png" style="max-width:300px; float:right; margin:0 0 1rem 2rem;" alt="Stable isotope odds figure">
-        <p>Animal tissues reflect the components synthesized during their formation — put another way, you are what you eat. Analyzing the stable isotope ratios of inert tissues like fur can reveal key insights about the past conditions under which they were synthesized, yielding information about the geographic origin and diet of an animal when the tissue was formed. I leverage stable hydrogen analysis of animal tissues with a particular interest in studying broad-scale migratory strategy, and have developed and validated new techniques to help scale our understanding from individual to population-level movements.</p>
-        <br>
-        <p><i>See also:</i></p>
-        <img src="images/WISN_fig3_v3.png" style="max-width:333px; float:right; margin:0 0 1rem 2rem;" alt="Wilson’s snipe figure">
-        <p>Carpenter, B* &amp; Campbell, CJ*; Fanning, A; McBride, M. Extensive migratory mixing of wintering Wilson’s snipe (<i>Gallinago delicata</i>) highlights the need for international coordination for monitoring and management. <b>Ornithological Applications</b>. duae064. [<a href="https://doi.org/10.1093/ornithapp/duae064">link</a>]</p>
-        <br style="clear:both">
-        <img src="images/clustEx.png" style="max-width:443px; margin: 1rem 0;" alt="Cluster example figure">
-        <p>Campbell, C. J.; Fitzpatrick, M.C.; Vander Zanden, H.; Nelson, D. M. 2020. Advancing interpretation of stable isotope assignment maps: comparing and summarizing origins of known-provenance migratory bats. <b>Animal Migration</b>. [<a href="https://doi.org/10.1515/ami-2020-0004">link</a>]</p>
-        <img src="images/CSIA-AA-exfig.png" style="max-width:300px; float:right; margin:0 0 1rem 2rem;" alt="CSIA amino acid figure">
-        <p>Campbell, C. J.; Nelson, D. M.; Ogawa, N.O.; Chikaraishi, Y.; and Ohkouchi, N. 2017. Trophic position and dietary breadth of bats revealed by nitrogen isotopic composition of amino acids. <b>Scientific Reports</b> 7:15932.</p>
-        <br style="clear:both">
+        <h3>Stable Isotopes &amp; Endogenous Markers</h3>
+        <figure class="method-fig">
+          <img src="images/ex_dD_odds.png" alt="Stable isotope origin-assignment odds surface">
+          <figcaption>A probabilistic origin-assignment surface derived from stable hydrogen isotopes in fur.</figcaption>
+        </figure>
+        <p>Animal tissues reflect the components synthesized during their formation. Put another way, you are what you eat. Analyzing the stable isotope ratios of inert tissues like fur can reveal the past conditions under which they were synthesized, yielding information about the geographic origin and diet of an animal when the tissue was formed. I use stable hydrogen analysis of animal tissues to study broad-scale migratory strategy, and I have developed and validated new techniques to help scale that understanding from individuals to populations.</p>
+        <div class="method-refs">
+          <span class="refs-label">Representative work</span>
+          <ul class="method-reflist">
+            <li>
+              <div class="ref-thumb"><img src="images/clustEx.png" alt=""></div>
+              <div class="ref-body">
+                <p class="ref-cite"><b>Campbell, CJ</b>; Fitzpatrick, MC; Vander Zanden, H; Nelson, DM. (2020). Advancing interpretation of stable isotope assignment maps. <jn>Animal Migration</jn>.</p>
+                <p class="ref-desc">Introduced ways to compare and summarize probabilistic origin assignments from known-provenance bats, packaged as the open-source isocat R package.</p>
+                <span class="ref-links"><a href="https://doi.org/10.1515/ami-2020-0004" target="_blank" rel="noopener"><i class="fas fa-link"></i>Article</a> <a href="docs/Campbell et al. - 2020 - Advancing interpretation of stable isotope assignm.pdf"><i class="fas fa-file-pdf"></i>PDF</a> <a href="https://github.com/cjcampbell/isocat" target="_blank" rel="noopener"><i class="fab fa-github"></i>Code</a></span>
+              </div>
+            </li>
+            <li>
+              <div class="ref-thumb"><img src="images/laci.svg" alt=""></div>
+              <div class="ref-body">
+                <p class="ref-cite"><b>Campbell, CJ</b>; Nelson, DM; Ogawa, NO; Chikaraishi, Y; Ohkouchi, N. (2017). Trophic position and dietary breadth of bats revealed by nitrogen isotopic composition of amino acids. <jn>Scientific Reports</jn> 7:15932.</p>
+                <p class="ref-desc">Used compound-specific amino-acid nitrogen isotopes to read bat trophic position and dietary breadth directly from tissue.</p>
+                <span class="ref-links"><a href="https://doi.org/10.1038/s41598-017-15440-3" target="_blank" rel="noopener"><i class="fas fa-link"></i>Article</a> <a href="docs/Campbell et al. - 2017 - Trophic position and dietary breadth of bats revea.pdf"><i class="fas fa-file-pdf"></i>PDF</a></span>
+              </div>
+            </li>
+            <li>
+              <div class="ref-thumb"><img src="images/gallinago.svg" alt=""></div>
+              <div class="ref-body">
+                <p class="ref-cite">Carpenter, B; <b>Campbell, CJ</b>; Fanning, A; McBride, M. (2024). Extensive migratory mixing of wintering Wilson's snipe. <jn>Ornithological Applications</jn> duae064.</p>
+                <p class="ref-desc">Applied feather hydrogen isotopes to show that wintering snipe draw from a wide sweep of breeding origins.</p>
+                <span class="ref-links"><a href="https://doi.org/10.1093/ornithapp/duae064" target="_blank" rel="noopener"><i class="fas fa-link"></i>Article</a> <a href="docs/2024 - Carpenter and Campbell - OrnApp - Snipe.pdf"><i class="fas fa-file-pdf"></i>PDF</a></span>
+              </div>
+            </li>
+            <li>
+              <div class="ref-thumb"><img src="images/black rosy finch outline3.svg" alt=""></div>
+              <div class="ref-body">
+                <p class="ref-cite"><b>Campbell, CJ</b>; et al. (2025). Quantifying rosy-finch migration with stable hydrogen isotope feather markers. <jn>Avian Conservation and Ecology</jn> 20(1):6.</p>
+                <p class="ref-desc">Traced rosy-finch movements with feather isotopes, showing that conservation goals need cooperation across states.</p>
+                <span class="ref-links"><a href="https://doi.org/10.5751/ACE-02798-200106" target="_blank" rel="noopener"><i class="fas fa-link"></i>Article</a> <a href="docs/ACE-ECO-2024-2798.pdf"><i class="fas fa-file-pdf"></i>PDF</a></span>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <hr>
       <section id="dev">
         <i class="fas fa-laptop-code method-icon-large"></i>
         <h3>Software Development</h3>
+        <figure class="method-fig" style="width:140px;">
+          <img src="images/isocat.png" style="border:none;" alt="isocat R package logo">
+        </figure>
         <p>I am passionate about developing open-source software to promote accessible and reproducible science.</p>
-        <p><i>Maintainer</i></p>
-        <p><b>SDMetrics</b>: Metric to Compare Temporally-Explicit Species Distribution Models. 2022.<br>
-        Development: <a href="https://github.com/cjcampbell/SDMetrics">https://github.com/cjcampbell/SDMetrics</a></p>
-        <p>
-          <img src="images/isocat.png" style="width:80px; float:left; margin:0 1.5rem 1rem 0;" alt="isocat logo">
-          <b>isocat</b>: Isotope Origin Clustering and Assignment Tools. 2018.<br>
-          Release: <a href="https://CRAN.R-project.org/package=isocat">https://CRAN.R-project.org/package=isocat</a><br>
-          Development: <a href="https://github.com/cjcampbell/isocat">https://github.com/cjcampbell/isocat</a>
-        </p>
-        <br style="clear:both">
-        <p><i>Contributor</i></p>
-        <p><b>phenesse</b>: Estimate Phenological Metrics using Presence-Only Data. 2019.<br>
-        Release: <a href="https://CRAN.R-project.org/package=phenesse">https://CRAN.R-project.org/package=phenesse</a><br>
-        Development: <a href="https://github.com/mbelitz/phenesse">https://github.com/mbelitz/phenesse</a></p>
+        <div class="method-refs">
+          <span class="refs-label">Software</span>
+          <ul class="method-reflist">
+            <li>
+              <div class="ref-thumb"><i class="fas fa-cube"></i></div>
+              <div class="ref-body">
+                <p class="ref-cite"><b>SDMetrics</b> &mdash; Metric to compare temporally-explicit species distribution models (2022). <span class="ref-role">Maintainer</span></p>
+                <p class="ref-desc">An R package providing a quantitative metric for comparing species distribution models that shift over time.</p>
+                <span class="ref-links"><a href="https://github.com/cjcampbell/SDMetrics" target="_blank" rel="noopener"><i class="fab fa-github"></i>Code</a></span>
+              </div>
+            </li>
+            <li>
+              <div class="ref-thumb"><i class="fas fa-cube"></i></div>
+              <div class="ref-body">
+                <p class="ref-cite"><b>isocat</b> &mdash; Isotope Origin Clustering and Assignment Tools (2018). <span class="ref-role">Maintainer</span></p>
+                <p class="ref-desc">An R package for clustering and summarizing probabilistic geographic origin assignments from stable-isotope data.</p>
+                <span class="ref-links"><a href="https://CRAN.R-project.org/package=isocat" target="_blank" rel="noopener"><i class="fas fa-box-open"></i>CRAN</a> <a href="https://github.com/cjcampbell/isocat" target="_blank" rel="noopener"><i class="fab fa-github"></i>Code</a></span>
+              </div>
+            </li>
+            <li>
+              <div class="ref-thumb"><i class="fas fa-cube"></i></div>
+              <div class="ref-body">
+                <p class="ref-cite"><b>phenesse</b> &mdash; Estimate phenological metrics using presence-only data (2019). <span class="ref-role">Contributor</span></p>
+                <p class="ref-desc">An R package for estimating phenological onset, offset, and duration from presence-only observations.</p>
+                <span class="ref-links"><a href="https://CRAN.R-project.org/package=phenesse" target="_blank" rel="noopener"><i class="fas fa-box-open"></i>CRAN</a> <a href="https://github.com/mbelitz/phenesse" target="_blank" rel="noopener"><i class="fab fa-github"></i>Code</a></span>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
 
 
