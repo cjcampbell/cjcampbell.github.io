@@ -1,3 +1,10 @@
 
 testTable.html
 .DS_Store
+.Rproj.user
+.claude/*
+CLAUDE.md
+*.Rproj
+
+# Scratch / experiment files (hero video tryouts, sample clips, etc.)
+tryouts/
