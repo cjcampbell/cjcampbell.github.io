@@ -160,18 +160,20 @@ section[id] {
   transition: color var(--transition);
 }
 .nav-links a:hover { color: #ffffff; }
+.nav-back {
+  display: flex;
+  align-items: center;
+}
 .nav-back a {
-  display: inline-flex;
+  display: flex;
   align-items: center;
 }
 .nav-back .bat-glyph {
   display: inline-block;
   width: 20px;
   height: 24px;
-  background-color: currentColor;
-  -webkit-mask: url(../../images/labo_solid.svg) center / contain no-repeat;
-  mask: url(../../images/labo_solid.svg) center / contain no-repeat;
-  transition: background-color var(--transition);
+  fill: currentColor;
+  transition: fill var(--transition);
 }
 
 /* Mobile hamburger (CSS-only checkbox toggle) */
@@ -952,6 +954,7 @@ h3.pubs-subtitle {
   flex-direction: column;
   gap: 2.25rem;
   margin-top: 2.5rem;
+  margin-bottom: 4.5rem;
 }
 .research-item {
   display: flex;
@@ -964,17 +967,17 @@ h3.pubs-subtitle {
   flex-direction: row-reverse;
 }
 .research-thumb {
-  flex: 0 0 240px;
-  width: 240px;
-  height: 240px;
+  flex: 0 0 300px;
+  width: 300px;
   border-radius: var(--radius);
   overflow: hidden;
-  background: var(--color-bg-alt);
+  background: transparent;
 }
 .research-thumb img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  max-height: 240px;
+  object-fit: contain;
   display: block;
   transition: transform 0.25s ease;
 }
@@ -1000,7 +1003,7 @@ h3.pubs-subtitle {
 @media (max-width: 600px) {
   .research-item,
   .research-item:nth-child(even) { flex-direction: row; gap: 1rem; }
-  .research-thumb { flex-basis: 130px; width: 130px; height: 130px; }
+  .research-thumb { flex-basis: 130px; width: 130px; }
   .research-item-body h3 { font-size: 1.1rem; }
 }
 .ref-body { flex: 1; min-width: 0; }
