@@ -7,6 +7,15 @@
 // Items are listed newest-first (chronological). `date` is a human display string.
 const NEWS = [
   {
+    date: "July 2026",
+    headline: "FWRI names our Wilson's snipe study its most innovative publication of the year",
+    blurb: "The Fish and Wildlife Research Institute recognized our Ornithological Applications paper — which used stable isotopes to trace the migratory mixing of Wilson's snipe across wintering grounds — as its most innovative scientific publication of the year.",
+    link: "https://doi.org/10.1093/ornithapp/duae064",
+    linkText: "Read the paper",
+    image: "images/wilsons-snipe-wood.jpg",
+    credit: "Photo: Stanley Wood (CC BY-NC)"
+  },
+  {
     date: "March 24, 2026",
     headline: "Highly and casually active citizen scientists contribute equally valuable data",
     blurb: "",
