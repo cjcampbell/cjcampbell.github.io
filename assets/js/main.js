@@ -1,190 +1,76 @@
-/*
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+// Sticky nav shadow on scroll
+const nav = document.getElementById('site-nav');
+if (nav) {
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 10);
+  }, { passive: true });
+}
 
-(function($) {
+// Smooth scroll for in-page anchor links; close mobile menu after click.
+// Uses window.scrollTo so we can subtract the fixed nav height manually —
+// scrollIntoView does not respect scroll-margin-top reliably across browsers.
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', e => {
+    const id = anchor.getAttribute('href');
+    if (id === '#') return;
+    const target = document.querySelector(id);
+    if (!target) return;
+    e.preventDefault();
+    const navHeight = nav ? nav.offsetHeight : 64;
+    const top = target.getBoundingClientRect().top + window.scrollY - navHeight;
+    window.scrollTo({ top, behavior: 'smooth' });
+    const toggle = document.getElementById('nav-toggle');
+    if (toggle) toggle.checked = false;
+  });
+});
 
-	var	$window = $(window),
-		$body = $('body'),
-		$sidebar = $('#sidebar');
+// News card renderer — reads the NEWS array from news.js
+// Respects optional data-limit attribute on the grid element.
+function renderNews() {
+  const grid = document.getElementById('news-grid');
+  if (!grid) return;
+  if (typeof NEWS === 'undefined' || !NEWS.length) {
+    grid.innerHTML = '<p class="news-empty">No news items yet.</p>';
+    return;
+  }
+  const limit = grid.dataset.limit ? parseInt(grid.dataset.limit, 10) : Infinity;
+  const items = NEWS.slice(0, limit);
+  grid.innerHTML = items.map(item => {
+    const creditHtml = item.credit
+      ? `<span class="news-card-credit">${item.creditLink
+          ? `<a href="${item.creditLink}" target="_blank" rel="noopener noreferrer">${item.credit}</a>`
+          : item.credit}</span>`
+      : '';
+    const imageHtml = item.image
+      ? `<div class="news-card-image"><img src="${item.image}" alt="" loading="lazy">${creditHtml}</div>`
+      : `<div class="news-card-placeholder"><i class="fas fa-leaf"></i></div>`;
+    const linkHtml = item.link
+      ? `<a href="${item.link}" class="news-card-link" target="_blank" rel="noopener noreferrer">${item.linkText || 'Learn more →'}</a>`
+      : '';
+    return `<article class="news-card">
+        ${imageHtml}
+        <div class="news-card-body">
+          <div class="news-card-date">${item.date}</div>
+          <h3 class="news-card-headline">${item.headline}</h3>
+          <p class="news-card-blurb">${item.blurb}</p>
+          ${linkHtml}
+        </div>
+      </article>`;
+  }).join('');
+}
 
-	// Breakpoints.
-		breakpoints({
-			xlarge:   [ '1281px',  '1680px' ],
-			large:    [ '981px',   '1280px' ],
-			medium:   [ '737px',   '980px'  ],
-			small:    [ '481px',   '736px'  ],
-			xsmall:   [ null,      '480px'  ]
-		});
+// Render immediately (this script is at the end of <body>, so the DOM above
+// exists). The news grid is injected at runtime, which changes page height.
+// If we arrived via a hash link (e.g. index.html#about), the browser may have
+// already scrolled using the pre-render layout and landed too high — above the
+// now-taller news section. Re-apply the scroll once the grid occupies its real
+// space so the target lands correctly on first click.
+renderNews();
 
-	// Hack: Enable IE flexbox workarounds.
-		if (browser.name == 'ie')
-			$body.addClass('is-ie');
-
-	// Play initial animations on page load.
-		$window.on('load', function() {
-			window.setTimeout(function() {
-				$body.removeClass('is-preload');
-			}, 100);
-		});
-
-	// Forms.
-
-		// Hack: Activate non-input submits.
-			$('form').on('click', '.submit', function(event) {
-
-				// Stop propagation, default.
-					event.stopPropagation();
-					event.preventDefault();
-
-				// Submit form.
-					$(this).parents('form').submit();
-
-			});
-
-	// Sidebar.
-		if ($sidebar.length > 0) {
-
-			var $sidebar_a = $sidebar.find('a');
-
-			$sidebar_a
-				.addClass('scrolly')
-				.on('click', function() {
-
-					var $this = $(this);
-
-					// External link? Bail.
-						if ($this.attr('href').charAt(0) != '#')
-							return;
-
-					// Deactivate all links.
-						$sidebar_a.removeClass('active');
-
-					// Activate link *and* lock it (so Scrollex doesn't try to activate other links as we're scrolling to this one's section).
-						$this
-							.addClass('active')
-							.addClass('active-locked');
-
-				})
-				.each(function() {
-
-					var	$this = $(this),
-						id = $this.attr('href'),
-						$section = $(id);
-
-					// No section for this link? Bail.
-						if ($section.length < 1)
-							return;
-
-					// Scrollex.
-						$section.scrollex({
-							mode: 'middle',
-							top: '-20vh',
-							bottom: '-20vh',
-							initialize: function() {
-
-								// Deactivate section.
-									$section.addClass('inactive');
-
-							},
-							enter: function() {
-
-								// Activate section.
-									$section.removeClass('inactive');
-
-								// No locked links? Deactivate all links and activate this section's one.
-									if ($sidebar_a.filter('.active-locked').length == 0) {
-
-										$sidebar_a.removeClass('active');
-										$this.addClass('active');
-
-									}
-
-								// Otherwise, if this section's link is the one that's locked, unlock it.
-									else if ($this.hasClass('active-locked'))
-										$this.removeClass('active-locked');
-
-							}
-						});
-
-				});
-
-		}
-
-	// Scrolly.
-		$('.scrolly').scrolly({
-			speed: 1000,
-			offset: function() {
-
-				// If <=large, >small, and sidebar is present, use its height as the offset.
-					if (breakpoints.active('<=large')
-					&&	!breakpoints.active('<=small')
-					&&	$sidebar.length > 0)
-						return $sidebar.height();
-
-				return 0;
-
-			}
-		});
-
-	// Spotlights.
-		$('.spotlights > section')
-			.scrollex({
-				mode: 'middle',
-				top: '-10vh',
-				bottom: '-10vh',
-				initialize: function() {
-
-					// Deactivate section.
-						$(this).addClass('inactive');
-
-				},
-				enter: function() {
-
-					// Activate section.
-						$(this).removeClass('inactive');
-
-				}
-			})
-			.each(function() {
-
-				var	$this = $(this),
-					$image = $this.find('.image'),
-					$img = $image.find('img'),
-					x;
-
-				// Assign image.
-					$image.css('background-image', 'url(' + $img.attr('src') + ')');
-
-				// Set background position.
-					if (x = $img.data('position'))
-						$image.css('background-position', x);
-
-				// Hide <img>.
-					$img.hide();
-
-			});
-
-	// Features.
-		$('.features')
-			.scrollex({
-				mode: 'middle',
-				top: '-20vh',
-				bottom: '-20vh',
-				initialize: function() {
-
-					// Deactivate section.
-						$(this).addClass('inactive');
-
-				},
-				enter: function() {
-
-					// Activate section.
-						$(this).removeClass('inactive');
-
-				}
-			});
-
-})(jQuery);
+if (location.hash && location.hash !== '#') {
+  const hashTarget = document.querySelector(location.hash);
+  if (hashTarget) {
+    const navHeight = nav ? nav.offsetHeight : 64;
+    window.scrollTo({ top: hashTarget.getBoundingClientRect().top + window.scrollY - navHeight });
+  }
+}

@@ -4,5 +4,7 @@ testTable.html
 .Rproj.user/*
 .claude/*
 *.Rproj
-tryouts/*
 CLAUDE.md
+
+# Scratch / experiment files (hero video tryouts, sample clips, etc.)
+tryouts/

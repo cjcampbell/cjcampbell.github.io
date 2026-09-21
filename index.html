@@ -1,491 +1,222 @@
 <!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>CJ Campbell</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CJ Campbell &mdash; Quantitative Ecology &amp; Conservation</title>
+  <meta name="description" content="Quantitative methods for biodiversity conservation where data are limited, uneven, or brand-new. Research Scientist at the University of Wisconsin–Madison and Quantitative Ecologist at Bat Conservation International.">
+  <meta name="author" content="CJ Campbell">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
-		<!-- Sidebar -->
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#intro">Welcome</a></li>
-							<li><a href="#research">Research</a></li>
-							<li><a href="#methods">Methodological Approaches</a></li>
-							<li><a href="#pubs">Publications | CV</a></li>
-							<li><a href="#background">Background</a></li>
-							<li><a href="#contact">Get in touch</a></li>
-						</ul>
-					</nav>
-				</div>
-			</section>
+  <!-- Open Graph / social share cards -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cjcampbell.github.io/">
+  <meta property="og:title" content="CJ Campbell — Quantitative Ecology & Conservation">
+  <meta property="og:description" content="Quantitative methods for biodiversity conservation where data are limited, uneven, or brand-new.">
+  <meta property="og:image" content="https://cjcampbell.github.io/images/og_card.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CJ Campbell — Quantitative Ecology & Conservation">
+  <meta name="twitter:description" content="Quantitative methods for biodiversity conservation where data are limited, uneven, or brand-new.">
+  <meta name="twitter:image" content="https://cjcampbell.github.io/images/og_card.jpg">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+</head>
+<body>
 
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-						
-							<h1><span style="background-color:rgba(0, 0, 0, 0.3);color: #ffffff;">CJ Campbell</span></h1>
-							
-							<h2><span style="background-color:rgba(0, 0, 0, 0.3);color: #ffffff;">I am a conservation ecologist focused on how animal movement connects and responds to a changing world. My research focuses on developing analytical tools to tackle pressing conservation challenges.</span>
-						
-								
-								<ul class="icons">
-								
-								<li><a href="https://github.com/cjcampbell/" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="https://scholar.google.com/citations?user=3hXUsSEAAAAJ" class="ai ai-google-scholar-square ai-1x"><span class="label" >Google Scholar</span></a></li>
-								<li><a href="https://www.inaturalist.org/people/1913736" class="ai ai-inaturalist-square ai-1x"><span class="label">iNaturalist</span></a></li>
-								<li><a href="https://www.researchgate.net/profile/Caitlin-Campbell-8" class="ai ai-researchgate-square ai-1x"><span class="label">ResearchGate</span></a></li>
+  <!-- Navigation -->
+  <nav class="site-nav" id="site-nav">
+    <a href="#hero" class="nav-logo">CJ Campbell</a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </label>
+    <ul class="nav-links">
+      <li class="nav-back"><a href="index.html" aria-label="Home"><svg class="bat-glyph" viewBox="0 0 1283 1536" aria-hidden="true" focusable="false"><path transform="translate(0.000000,1536.000000) scale(0.100000,-0.100000)" d="M11420 15098 c-14 -6 -122 -57 -240 -114 -118 -56 -239 -109 -269 -118 -172 -50 -566 -320 -1091 -745 -189 -153 -616 -483 -635 -490 -5 -2 -41 -30 -80 -62 -38 -32 -140 -115 -225 -184 -226 -184 -367 -313 -499 -455 -242 -260 -428 -482 -636 -760 -189 -253 -561 -600 -643 -600 -45 0 -112 41 -194 117 -71 67 -83 74 -109 69 -69 -14 -174 -113 -167 -158 3 -21 9 -23 88 -30 93 -7 184 -35 242 -73 45 -30 47 -44 13 -73 -27 -24 -32 -42 -12 -42 21 0 165 -154 182 -193 8 -19 19 -56 25 -81 19 -84 39 -434 45 -791 6 -325 5 -358 -14 -467 -11 -65 -27 -134 -35 -153 -49 -117 -227 -316 -368 -413 -96 -65 -223 -126 -308 -148 -86 -22 -267 -14 -359 15 -35 12 -71 21 -81 21 -57 0 -211 73 -336 159 -154 107 -242 126 -425 91 -169 -32 -581 -171 -814 -274 -85 -37 -103 -55 -152 -151 -50 -96 -43 -267 17 -440 47 -135 97 -287 119 -360 26 -85 145 -326 180 -363 14 -15 52 -63 86 -107 72 -96 277 -304 361 -367 81 -60 104 -107 104 -210 0 -149 -76 -366 -174 -495 -68 -90 -238 -247 -341 -316 -49 -33 -108 -77 -130 -98 -53 -50 -152 -98 -228 -110 -42 -6 -96 -27 -168 -64 -66 -33 -199 -86 -345 -135 -131 -45 -274 -98 -318 -120 -45 -21 -108 -43 -141 -49 -218 -37 -260 -42 -303 -38 -63 6 -163 26 -185 38 -10 5 -17 5 -17 0 0 -5 -16 -5 -37 1 -51 14 -125 11 -141 -6 -24 -23 -4 -52 68 -101 65 -45 71 -47 115 -41 41 7 52 4 87 -19 38 -25 40 -29 35 -67 -10 -75 -23 -97 -438 -713 -175 -261 -326 -521 -568 -980 -330 -625 -450 -887 -656 -1430 -424 -1118 -522 -1407 -570 -1687 -17 -93 -14 -104 29 -155 41 -48 109 -18 177 79 69 99 196 218 315 297 185 122 583 315 714 345 36 8 106 24 155 35 111 25 393 45 412 30 18 -15 91 -1 114 22 24 24 56 11 70 -30 8 -22 24 -34 75 -54 107 -44 164 -33 224 43 18 23 77 127 132 233 54 105 128 234 163 287 80 120 215 263 369 393 67 56 173 146 236 201 136 117 240 188 313 212 28 9 135 55 237 101 232 106 443 178 575 197 55 9 177 20 272 26 339 20 593 9 826 -37 99 -19 144 -24 155 -17 35 21 52 81 77 274 14 107 34 231 44 275 107 444 402 801 877 1063 271 150 662 279 944 312 181 22 285 39 360 60 199 55 871 47 1095 -12 97 -26 318 -137 638 -321 396 -229 568 -339 660 -424 62 -57 90 -65 107 -33 17 31 -3 83 -49 131 -37 39 -57 80 -31 64 22 -14 7 22 -41 98 -62 97 -85 148 -94 209 -6 40 6 390 20 579 5 62 4 66 -25 94 -16 16 -30 25 -30 22 0 -4 -15 8 -34 26 -19 19 -72 60 -118 90 -96 64 -134 101 -143 140 -10 37 9 57 52 57 49 0 73 16 73 48 0 29 -11 45 -125 174 -125 142 -173 207 -194 262 -11 29 -33 152 -50 272 -17 120 -45 272 -61 338 -67 267 -122 844 -140 1476 -11 384 -5 508 30 640 51 187 158 418 218 471 84 74 330 160 512 180 131 14 139 16 152 44 9 20 7 36 -8 81 -26 77 -43 94 -94 87 -35 -5 -40 -3 -40 14 0 12 -7 26 -16 34 -20 16 -47 69 -40 77 4 3 12 0 18 -6 7 -7 16 -12 20 -12 18 0 6 25 -33 67 -111 120 -163 344 -209 893 -6 69 -22 217 -36 330 -43 356 -45 383 -39 475 12 164 49 293 122 425 55 99 211 327 249 364 19 18 34 38 34 45 0 28 42 90 97 142 84 80 122 109 137 103 13 -5 116 99 116 117 0 11 94 120 237 277 51 56 95 112 99 126 10 43 2 61 -31 62 -35 0 -94 29 -102 49 -3 8 -20 24 -39 36 -46 28 -74 70 -95 143 -9 33 -49 129 -87 211 -39 83 -82 191 -97 240 -33 113 -47 291 -35 429 9 101 14 119 51 186 10 19 19 47 19 62 0 40 41 127 104 221 31 45 63 93 72 107 67 100 83 129 86 155 2 24 -1 30 -17 32 -11 1 -31 -3 -45 -9z"/></svg></a></li>
+      <li><a href="methods.html">Research</a></li>
+      <li><a href="pubs.html">Publications / CV</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="#about">About &amp; Contact</a></li>
+    </ul>
+  </nav>
 
-								
-								</ul>
-							</h2>
+  <!-- Hero -->
+  <section id="hero">
+    <video autoplay muted loop playsinline poster="images/vid_hero_poster.jpg">
+      <source src="images/vid_hero.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-frost" aria-hidden="true"></div>
+    <div class="hero-content">
+      <h1>CJ Campbell</h1>
+      <p class="hero-tagline">Quantitative methods for biodiversity conservation where data are limited, uneven, or brand-new</p>
+      <p class="hero-affiliation">University of Wisconsin&ndash;Madison &middot; Bat Conservation International</p>
+      <ul class="hero-icons">
+        <li><a href="https://github.com/cjcampbell/" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://scholar.google.com/citations?user=3hXUsSEAAAAJ" aria-label="Google Scholar"><i class="ai ai-google-scholar-square"></i></a></li>
+        <li><a href="https://www.inaturalist.org/people/1913736" aria-label="iNaturalist"><i class="ai ai-inaturalist-square"></i></a></li>
+        <li><a href="https://www.researchgate.net/profile/Caitlin-Campbell-8" aria-label="ResearchGate"><i class="ai ai-researchgate-square"></i></a></li>
+      </ul>
+    </div>
+    <div class="scroll-indicator" aria-hidden="true">
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
 
-						</div>
-					</section>
+  <!-- Research -->
+  <section id="research">
 
-				<!-- One -->
-					<section id="research" class="wrapper style2 spotlights">
-						<section>
-							<a href="#" class="image"><img src="images/garrettCo_snap.png" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Aeroecology and Migration</h2>
-									<p>Flying animal migration is a behavioral phenomenon that shapes the structure and function of ecosystems worldwide. My research centers on the study and conservation of animal migration and aerial habitats.</p>
-									<ul class="actions">
-										<!-- <li><a href="generic.html" class="button">Learn more</a></li> -->
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/pexels-세훈-오-10169285.jpg" alt="" data-position="top center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Repowering</h2>
-									<p>Transitioning to renewable energy generation is essential to limit the worst effects of global climate change. I am interested in studying the effects of this transition on wildlife and developing methods and models to best predict and minimize risks to wildlife and habitats.</p>
-									<ul class="actions">
-										<!-- <li><a href="generic.html" class="button">Learn more</a></li> -->
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/n_total_Species.png" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Macroecology</h2>
-									<p>Macroecology is the study of ecological patterns at broad spatial scales. I am interested in synthesizing  ecological processes that play out at the scale of the individual and population to examine patterns at broad spatial, temporal, and taxonomic scales. </p>
-									<ul class="actions">
-										<!-- <li><a href="generic.html" class="button">Learn more</a></li> -->
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/hoary_bat_brockfenton.jpg" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Bat Ecology and Conservation</h2>
-									<p>Bats are among the most diverse and least-studied groups of mammals. Despite a near worldwide distribution, we know shockingly little about their ecology and evolution. My work deepens our understanding of bat ecology and can inform conservation by integrating data resources, from historical records to novel community science observations.</p>
-									<ul class="actions">
-										<!-- <li><a href="generic.html" class="button">Learn more</a></li> -->
-									</ul>
-								</div>
-							</div>
-						</section>
-						
-					</section>
-
-				<!-- methods -->
-					<section id="methods" class="wrapper style3 fade-up">
-						<div class="inner">
-							<h2>Methodological Approaches</h2>
-							<p>I leverage a broad suite of methodological approaches to tackle pressing conservation challenges, with a particular focus on developing the methods needed to conduct research in under-studied systems and taxa where creative approaches are needed.</p>
-							<div class="features">
-								<section>
-									<a href="methods.html#SDM"><span class="icon solid major fa-globe"></span></a>
-									<h3>Spatial modeling</h3>
-									<p>Understanding how organisms interact with, and are limited by, their environment is a central question of ecology.</p>
-									<ul class="actions"><li><a href="methods.html#SDM" class="button small">Learn more</a></li></ul>
-								</section>
-								<section>
-									<a href="methods.html#data"><span class="icon solid major fa-database"></span></a>
-									<h3>Biodiversity Informatics</h3>
-									<p>The availability of biodiversity data is increasing exponentially. I research its generation and develop methods to apply it rigorously.</p>
-									<ul class="actions"><li><a href="methods.html#data" class="button small">Learn more</a></li></ul>
-								</section>
-								<section>
-									<a href="methods.html#SIA"><span class="icon solid major fa-atom"></span></a>
-									<h3>Endogenous markers</h3>
-									<p>Analyzing endogenous markers can help scale studies of animal movement from the individual to that of the population.</p>
-									<ul class="actions"><li><a href="methods.html#SIA" class="button small">Learn more</a></li></ul>
-								</section>
-
-								<section>
-									<a href="methods.html#dev"><span class="icon solid major fa-laptop-code"></span></a>
-									<h3>Software development</h3>
-									<p>I am passionate about developing open-source software to promote accessible and reproducible science.</p>
-									<ul class="actions"><li><a href="methods.html#dev" class="button small">Learn more</a></li></ul>
-								</section>
-
-					<!---			
-								<section>
-									<a href="methods.html#field"><span class="icon solid major fa-binoculars"></span></a>
-									<h3>Fieldwork</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-									<ul class="actions"><li><a href="methods.html#field" class="button small">Learn more</a></li></ul>
-								</section>
-								<section>
-									<a href="methods.html#cviz"><span class="icon solid major fa-brain"></span></a>
-									<h3>Computer vision</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-									<ul class="actions"><li><a href="methods.html#cviz" class="button small">Learn more</a></li></ul>
-								</section>
-					--->
-							</div>
-							
-						</div>
-					</section>
-					
-				<!-- Publications -->	
-					<section id="pubs" class="wrapper style2 fade-up">
-						<div class="inner">
-							<h2>Publications</h2>
-							
-								<ul class="actions fit">
-									<li><a href="https://scholar.google.com/citations?user=3hXUsSEAAAAJ" class="button scrolly">View Google Scholar</a></li>
-									<li><a href="./docs/CJCampbell_cv.pdf" class="button scrolly">Download CV (pdf)</a></li>
-								</ul>
+    <div class="research-header inner">
+      <h2 class="section-title">Research</h2>
+      <p class="section-intro">I am a conservation ecologist who develops the methods, tools, and approaches needed to
+      tackle pressing conservation challenges, especially in the systems and species that would otherwise go understudied.</p>
+    </div>
 
 
-					<h3>Preprints</h3>
+    <div class="inner">
+      <div class="research-list">
+        <a class="research-item" href="methods.html#research-scale">
+          <div class="research-thumb"><img src="images/radar-example.png" alt="Weather-surveillance radar reflectivity frames of a Bracken Cave bat emergence"></div>
+          <div class="research-item-body">
+            <h3>Methods for studying biodiversity at scale</h3>
+            <p>Acoustics, computer vision, radar, stable isotopes, and biodiversity informatics — methods to observe and infer life at scales traditional fieldwork can't reach.</p>
+            <span class="research-item-more">View more →</span>
+          </div>
+        </a>
+        <a class="research-item" href="methods.html#research-movement">
+          <div class="research-thumb"><img src="images/ecollet-f1.jpg" alt="Multi-step framework for inferring migratory strategy from endogenous markers"></div>
+          <div class="research-item-body">
+            <h3>Movement &amp; ecology of understudied taxa</h3>
+            <p>The cryptic migrations and natural history of birds, bats, and insects, and the conservation challenges they meet aloft.</p>
+            <span class="research-item-more">View more →</span>
+          </div>
+        </a>
+        <a class="research-item" href="methods.html#research-conservation">
+          <div class="research-thumb"><img src="images/state_of_bats.jpg" alt="North American bats by phylogeny and conservation status"></div>
+          <div class="research-item-body">
+            <h3>Science-to-conservation</h3>
+            <p>Turning quantitative findings into practical guidance for policy and management, from wind-energy curtailment to continental conservation syntheses.</p>
+            <span class="research-item-more">View more →</span>
+          </div>
+        </a>
+      </div>
+    </div>
 
-									Vinod Anand, A; <b>Campbell, CJ</b>; Loiselle, B; Guralnick, R. 
-									Precipitation tolerance determines elevational migration strategies of resident birds of the Western Ghats of India. 
-									<jn>BioRXiv</jn>. 
-									<a href="https://doi.org/10.1101/2024.12.14.628488" class="ai ai-biorxiv-square ai-1x"></a>
-									<br><br>
-									
-					<h3>Peer-reviewed</h3>
-								
-									
-									
-									21. Grady, E; <b>Campbell, CJ</b>*; Callaghan, C; Guralnick, R*. 
-									2026.
-									iNaturalist users exhibit distinct spatiotemporal sampling preferences, with implications for biodiversity science and project planning. 
-									<jn>Citizen Science: Theory and Practice</jn>. 11(1): 3, 1–15.
-									<a href="https://doi.org/10.5334/cstp.868" class="fa fa-link"></a>
-									<br><br>
-									
-									20. Idec, J; <b>Campbell, CJ</b>; Belitz, M; Vinod Anand, A; Guralnick, R. 
-									2025.
-									Using iNaturalist to estimate trait and climate drivers of daily activity patterns in temperate butterflies. 
-									<jn>PLOS One</jn>. 20(11), e0335856. 
-									<a href="https://doi.org/10.1371/journal.pone.0335856" class="fa fa-link"></a>
-									<br>
-									
-									<img src = "images/labo_solid.svg" width = "9%" align = "right" class="filter-icon">
-									<br>
-									19. <b>Campbell, CJ</b>; Nelson, DM; Nagel, J; Clerc, J; Weller, TJ; Weiringa, JG; Fraser, E; Longstaffe, FJ; Hale, AM; Lout, M; Pruitt, L; Guralnick, R; Vander Zanden, HB. 
-									2025.
-									Migratory strategy is a key factor driving interactions at wind energy facilities in at-risk North American bats.
-									<jn>Ecology Letters</jn>. 28:e70202.
-									<a href="https://doi.org/10.1111%2Fele.70202" class="fa fa-link"></a>
-									<a href="docs/2025 - Ecology Letters - Migratory Strategy is a Key Factor Driving Interactions at Wind Energy Facilities in.pdf" class="fa fa-file"></a>
-									<a href="https://doi.org/10.1101/2024.01.28.577637" class="ai ai-biorxiv-square ai-1x"></a> 
-									<a href="https://github.com/cjcampbell/BatMigratoryDistDir" class = "icon brands fa-github"></a>
-									<a href="https://doi.org/10.5281/zenodo.10578031" class = "ai ai-zenodo ai-1x"></a>
-									<br><br>
-								
-									18. Wilson, J*, True, M*; <b>Campbell, CJ</b>. 
-									2025.
-									Autumn migration to higher latitudes in Seminole bats (<i>Lasiurus seminolus</i>) redefines seasonal ranges: evidence from stable isotopes and fatality data from wind energy facilities. 
-									<jn>Ecology & Evolution</jn>. 15:e71657.
-									<a href="http://dx.doi.org/10.1002/ece3.71657" class="fa fa-link"></a>
-									<a href="docs/2025 - Ecology and Evolution - Autumn Migration to Higher Latitudes in Seminole Bats Lasiurus seminolus" class="fa fa-file"></a>
-									<br>
-									
-									<img src = "images/actias.svg" width = "9%" align = "left" class="filter-icon">
-									<br>
-									<i>17.</i> Rubin, J; <b>Campbell, CJ</b>; Carvalho, APS; St Laurent, RA; Crespo, GI; Pierson, TL; Guralnick, RP; Kawahara, AY.  
-									2025.
-									Macroevolutionary constraint and selection on anti-bat moth tails. 
-									<jn>Proceedings of the Royal Society B</jn>. 292(2046). 
-									<a href="https://doi.org/10.1098/rspb.2024.2824" class="fa fa-link"></a>
-									<a href="docs/rubin-et-al-strong-bat-predation-and-weak-environmental-constraints-predict-longer-moth-tails.pdf" class="fa fa-file"></a> 
-									<a href="https://doi.org/10.1101/2024.05.05.590753" class="ai ai-biorxiv-square ai-1x"></a> 
-									<a href="https://github.com/cjcampbell/Rubin-et-al---Moon-moth-bat-predator-richness" class = "icon brands fa-github"></a>
-									<a href="https://doi.org/10.5281/zenodo.8117742" class = "ai ai-zenodo ai-1x"></a>
-									<br><br>
-									
-								
-									<img src = "images/black rosy finch outline3.svg" width = "8%" align = "right" class = "filter-icon">
-									<i>16.</i> <b>Campbell, CJ</b>; Gardner, JH; Rushing, CS; Norvell, R; Farr, CM; Savides, K. 
-									2025. 
-									Quantifying rosy-finch migration with stable hydrogen isotope feather markers highlights the need for inter-state collaboration to reach conservation goals. 
-									<jn>Avian Conservation and Ecology</jn>. 20(1):6. 
-									<a href="https://doi.org/10.5751/ACE-02798-200106" class="fa fa-link"></a> 
-									<a href="docs/ACE-ECO-2024-2798.pdf" class="fa fa-file"></a> 
-									<a href="https://github.com/cjcampbell/RosyFinchesdD" class="icon brands fa-github"></a> 
-									<a href="https://doi.org/10.5281/zenodo.14035945" class="ai ai-zenodo ai-1x"></a> 
-									
-									<br><br>
-				
-				
-									<img src = "images/assemblage butterflies.svg" width = "9%" align = "left" class="filter-icon">
-									<i>15.</i> Belitz, M; <b>Campbell, CJ</b>; Drum, RM; Leuenberger, W; Morelli, TL; Nail, J; Shirey, V; Warner, S; Thogmartin, W; Zipkin, EF. 
-									2025. 
-									A case for community assemblage-level conservation to address the biodiversity crisis. 
-									<jn>Nature Reviews Biodiversity</jn>. 2025. 1, 134–143. 
-									<a href="https://doi.org/10.1038/s44358-024-00014-9" class="fa fa-link"></a> 
-									<a href="docs/2025 - Belitz - NRBD - Assemblage level conservation.pdf" class="fa fa-file"></a>
-									<br><br>
-									
-									<img src = "images/gallinago.svg" width = "11%" align = "right" class="filter-icon">
-									<i>14.</i> Carpenter, B* & <b>Campbell, CJ*</b>; Fanning, A; McBride, M. 
-									2024.
-									Extensive migratory mixing of wintering Wilson’s snipe (<i>Gallinago delicata</i>) highlights the need for international coordination for monitoring and management. 
-									<jn>Ornithological Applications</jn>. duae064. 
-									<a href="https://doi.org/10.1093/ornithapp/duae064" class="fa fa-link"></a>  
-									<a href="docs/2024 - Carpenter and Campbell - OrnApp - Snipe.pdf" class="fa fa-file"></a>
-									<a href="https://github.com/cjcampbell/WISN_dD"class="icon brands fa-github"></a> 
-									<a href="https://doi.org/10.5281/zenodo.10680881" class="ai ai-zenodo ai-1x"></a> 
-									<br>
-									
-									
-									<img src = "images/noun-tower-1987601.svg" width = "10%", align = "left" class="filter-icon">
-									<br>
-									<i>13.</i> <b>Campbell, CJ</b>; Cheng, T; Akre, K; Adams, A; Solick, D; Bennett, A; Newman, C; Frick, W. 
-									2024.
-									Maximizing benefits to bat populations through management of power line corridors. 
-									<jn>Ecological Solutions and Evidence</jn>. 5 (4), e12392. 
-									<a href="https://doi.org/10.1002/2688-8319.12392" class="fa fa-link"></a>
-									<a href="docs/Ecol Sol and Evidence - 2024 - Campbell - Maximizing benefits to bat populations through management of power line corridors.pdf" class="fa fa-file"></a>
-									
-									<br><br>
-									
-									<img src = "images/Leptonycteris yerbabuenae.svg" width = "10%", align = "right" class="filter-icon">
-									<i>12.</i> 
-									Adams, AM Trujillo, LA; <b>Campbell, CJ</b>; Akre, KL; Arroyo-Cabrales, J; Burns, L; Coleman, JTH; Morris, K M; Ortega, J; Reichard , JD; Reichert, B; Segers, JL; Whitby, MD; Frick, WF. 
-									2024.
-									The State of the Bats in North America. 
-									<jn>The Annals of the New York Academy of Sciences</jn>. 2024, 1–14. 
-									<a href="https://doi.org/10.1111/nyas.15225" class="fa fa-link"></a> 
-									<a href="docs/Annals of the New York Academy of Sciences - 2024 - Adams - The state of the bats in North America.pdf" class="fa fa-file"></a> 
-									<br><br>
-									
-									<i>11.</i> 
-									Wieringa, JM; Nagel, J; <b>Campbell</b>, CJ; Nelson, DM; Carstens BC; Gibbs, HL. 
-									2024. 
-									Geographic sources of bats killed at wind-energy facilities in the eastern United States. 
-									<jn>PeerJ</jn> 12, e16796. 
-									<a href="https://doi.org/10.7717/peerj.16796" class="fa fa-link"></a>
-									<br>
-									
-									
-									<img src = "images/inaturalist-svgrepo-com.svg" width = "10%" align = "left" class="filter-icon"/>
-									<br>
-									<i>10.</i>
-									<b> Campbell, CJ</b>; Barve, V; Belitz, M; Doby, J R; White, E; Seltzer, C; Di Cecco, G; Hurlbert, AH; Guralnick, R. 
-									2023. 
-									Identifying the Identifiers: How iNaturalist facilitates collaborative, research-relevant data generation and why it matters for biodiversity science. 
-									<jn>BioScience</jn>.
-									<a href = "https://doi.org/10.1093/biosci/biad051" class="fa fa-link"></a>
-									<a href = "docs/Campbell et al. - 2023 - Identifying the identifiers.pdf" class="fa fa-file"></a>
-									<a href="https://github.com/cjcampbell/iNaturalist-Identifiers" class = "icon brands fa-github"></a>
-									<a href="https://osf.io/j752n/" class="ai ai-osf ae-1x"></a>
-									<br><br>
-									
-									<img src = "images/big-data-svgrepo-com.svg" width = "7%" align = "right" class="filter-icon">
-									<i>9. </i>
-									McCleery, R; Guralnick, R; Beatty, M; Belitz, M; <b>Campbell, CJ</b>; Idec, J; Jones, M; Kang, Y; Potash, A; and Fletcher, RJ. 
-									2023.
-									Uniting Experiments and Big Data to advance ecology and conservation. 
-									 <jn>Trends in Ecology & Evolution</jn>. 
-									 <a href = "https://doi.org/10.1016/j.tree.2023.05.010" class="fa fa-link"></a>
-									 <a href = "docs/McCleery et al. - 2023 - Uniting Experiments and Big Data to advance ecolog.pdf" class="fa fa-file"></a>
-									<br><br>
-									
-									<i>8. </i>
-									Wieringa, JG; Nagel, J; <b>Campbell, CJ</b>; Nelson, DM; Carstens, BC; Gibbs, HL. 
-									2023. 
-									Combining stable isotopes, trace elements, and distribution models to assess the geographic origins of migratory bats. 
-									<jn>Ecosphere</jn> 14(6), e4588. 
-									<a href = "https://doi.org/10.1002/ecs2.4588" class="fa fa-link"></a>
-									<br><br>
-									
-									<i>7. </i>
-									Smith, LM; Gore, JA; Doonan, TJ; <b>Campbell, CJ</b>. 
-									2022. 
-									Tricolored bats at a southern range edge exhibit partial migration northward in autumn. 
-									<jn>Movement Ecology</jn> 10(1), 1-13. 
-									<a href = "https://doi.org/10.1186/s40462-022-00358-x" class="fa fa-link"></a>
-									<a href = "docs/Smith et al. - 2022 - Tricolored bats at a southern range edge exhibit p.pdf" class="fa fa-file"></a>
-									<a href="https://github.com/cjcampbell/PESU_migration_ms" class = "icon brands fa-github"></a>
-									<br><br>
-									
-									<img src = "images/epfu.svg" width = "9%" align = "right" class="filter-icon">
-									<i>6. </i>
-									<b>Campbell, CJ</b>; Nelson, DM; Gates, JE; Gibbs, HL; Stevenson, ER; Johnson, B; Nagel, J; Trott, R; Wieringa, JG; Vander Zanden, HB. 
-									2022. 
-									White-nose syndrome pathogen <i>Pseudogymnoascus destructans</i> detected on migratory bats during summer and autumn, including hoary bat (<i>Lasiurus cinereus</i>). 
-									<jn>Journal of Wildlife Diseases</jn>. 
-									<a href = "https://doi.org/10.7589/JWD-D-21-00160" class="fa fa-link"></a>
-									<a href = "docs/Campbell et al. - 2022 - Pd detection.pdf" class="fa fa-file"></a>
-									<a href="https://github.com/cjcampbell/Pd_DetectionMigratoryBats" class = "icon brands fa-github"></a>
-									<a href="https://doi.org/10.5281/zenodo.5807798" class="ai ai-zenodo ai-1x"></a>
-									<br><br>
-									
-									<img src = "images/location.svg" width = "6%" align = "left" class = "filter-icon">
-									<i>5. </i>
-									<b>Campbell, CJ</b>; Fitzpatrick, MC; Vander Zanden, H; Nelson, DM. 
-									2020. 
-									Advancing interpretation of stable isotope assignment maps: comparing and summarizing origins of known-provenance migratory bats. 
-									<jn>Animal Migration</jn>. 
-									<a href = "https://doi.org/10.1515/ami-2020-0004" class="fa fa-link"></a>
-									<a href = "docs/Campbell et al. - 2020 - Advancing interpretation of stable isotope assignm.pdf" class="fa fa-file"></a>
-									<a href = "https://github.com/cjcampbell/isocat" class = "icon brands fa-github"></a>
-									<br><br>
-									
-									<img src = "images/turbine.svg" width = "6%" align = "right" class="filter-icon">
-									<i>4. </i>
-									Katzner, TE; Nelson, DM; Diffendorfer, JE; Duerr, AE; <b>Campbell, CJ</b>; Leslie, D; Vander Zanden, HB; Yee, JL; Sur, M; Huso, MMP; Braham, MA; Morrison, ML; Loss, SR; Poessel, SA; Conkling, TJ; Miller, TA. 
-									2019. 
-									Wind energy: An ecological challenge. 
-									<jn>Science</jn> 366(6470):1206–1207. 
-									<a href = "https://doi.org/10.1126/science.aaz9989" class="fa fa-link"></a>
-									<a href = "docs/windEnergyEcologicalChallenge.pdf" class="fa fa-file"></a>
-									<br><br>
-									
-									<i>3. </i>
-									Nelson, DM; Nagel, J; Trott, R; <b>Campbell, CJ</b>; Pruitt, L; Good, RE; Iskali, G; Gugger, PF. 
-									2018. 
-									Carcass age and searcher identity affect morphological assessment of sex of bats. 
-									<jn>The Journal of Wildlife Management</jn> 82(8), 1582-1587. 
-									<a href = "https://wildlife.onlinelibrary.wiley.com/doi/abs/10.1002/jwmg.21544" class="fa fa-link"></a>
-									<a href = "docs/Nelson et al. - 2018 - Carcass age and searcher identity affect morpholog.pdf" class="fa fa-file"></a>
-									
-									<br>
-									<img src = "images/lano_greys.svg" width = "8%" align = "left" class = "filter-icon">
-									<br>
-									
-									
-									<i>2. </i>
-									<b>Campbell, CJ</b>; Nelson, DM; Ogawa, NO; Chikaraishi, Y; Ohkouchi, N. 
-									2017. 
-									Trophic position and dietary breadth of bats revealed by nitrogen isotopic composition of amino acids. 
-									<jn>Scientific Reports</jn> 7:15932. 
-									<a href="https://doi.org/10.1038/s41598-017-15440-3" class="fa fa-link"></a>
-									<a href = "docs/Campbell et al. - 2017 - Trophic position and dietary breadth of bats revea.pdf" class="fa fa-file"></a>
-									<a href="https://github.com/cjcampbell/Bat_CSIAAA" class = "icon brands fa-github"></a>
-									<br><br>
-									
-									<img src = "images/bryde.svg" width = "16%" align = "right" class="filter-icon">
-									<i>1. </i>
-									Roman, J; Altman, I; Dunphy-Daly, M; <b>Campbell, C</b>; Jasny, M; Read, A. 
-									2013. 
-									The Marine Mammal Protection Act at 40: Status, recovery, and future of U.S. marine mammals. 
-									<jn>The Annals of the New York Academy of Sciences</jn> 1286:29-49. 
-									<a href = "https://doi.org/10.1111/nyas.12040" class="fa fa-link"></a>
-									<a href = "Roman et al. - 2013 - The Marine Mammal Protection Act at 40 status, recovery, and future of U.S. marine mammals.pdf" class="fa fa-file"></a>
-									<br><br>
+    <!-- Methods sub-section -->
+    <div class="methods-section">
+      <div class="inner">
+        <h2 class="section-title">Methodological Approaches</h2>
+        <p class="section-intro">I leverage a broad suite of methodological approaches to tackle pressing conservation challenges, with a particular focus on developing the methods needed to conduct research in under-studied systems and taxa.</p>
+        <div class="methods-grid">
+          <div class="method-card">
+            <i class="fas fa-chart-line method-icon"></i>
+            <h4>Data Science</h4>
+            <p>I develop methods to integrate biodiversity data from many sources and account for the biases in large, uneven datasets.</p>
+            <a href="methods.html#data">Learn more →</a>
+          </div>
+          <div class="method-card">
+            <i class="fas fa-project-diagram method-icon"></i>
+            <h4>Machine Learning &amp; Quantitative Methods</h4>
+            <p>From computer-vision detection to hierarchical and Bayesian models, I build the analytical tools that turn large, noisy ecological data into inference.</p>
+            <a href="methods.html#ml">Learn more →</a>
+          </div>
+          <div class="method-card">
+            <i class="fas fa-globe method-icon"></i>
+            <h4>Spatial Modeling</h4>
+            <p>Understanding how organisms interact with, and are limited by, their environment is a central question of ecology.</p>
+            <a href="methods.html#SDM">Learn more →</a>
+          </div>
+          <div class="method-card">
+            <i class="fas fa-microphone method-icon"></i>
+            <h4>Remote Monitoring &amp; Bioacoustics</h4>
+            <p>I deploy passive acoustic monitoring, bioacoustic detection, and weather-surveillance radar to observe wildlife at scales that traditional field methods cannot reach.</p>
+            <a href="methods.html#monitoring">Learn more →</a>
+          </div>
+          <div class="method-card">
+            <i class="fas fa-atom method-icon"></i>
+            <h4>Stable Isotopes &amp; Endogenous Markers</h4>
+            <p>Analyzing endogenous markers like stable isotopes helps scale studies of animal movement from the individual to the population.</p>
+            <a href="methods.html#SIA">Learn more →</a>
+          </div>
+          <div class="method-card">
+            <i class="fas fa-laptop-code method-icon"></i>
+            <h4>Software Development</h4>
+            <p>I develop open-source software to promote accessible, reproducible science.</p>
+            <a href="methods.html#dev">Learn more →</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="section-cta">
+      <a href="pubs.html" class="btn btn-forest">View all publications &amp; CV →</a>
+    </div>
 
-							</div>
-				
-					</section>				
-				
-				
-				
-					
-					
-				<!-- Background-->
-					<section id="background" class="wrapper style3 fade-up">
-						<div class="inner">
-							<h2>Background</h2>
-				
-								<section>
-									
-									<span class="image left">
-										<img src = "images/me_labo.jpg" data-position="25% 25%" width = "300" height = "300" align = "left"> <br>
-										</span>
-										<span> I am a quantitative ecologist at <a href = "https://www.batcon.org">Bat Conservation International</a>. I have also led the bat bioacoustics and bioinformatics efforts for <a href="https://www.xprize.org/prizes/rainforest">XPrize Rainforest</a> finalist team <a href="www.teamwaponi.org">Limelight Rainforest</a>.<br>
-										I completed by PhD at the University of Florida in the <a href = "https://people.clas.ufl.edu/hvz/">Animal Migration and Ecology Lab</a> working with <a href = "https://people.clas.ufl.edu/hvz/people/">Hannah Vander Zanden</a> in the Department of Biology. I was a <a href = "https://biodiversity.research.ufl.edu/">University of Florida Biodiversity Institute</a> Fellow and was also supported by a UF Graduate School Fellowship.</br>
-										My master's research was conducted at the <a href = "https://www.umces.edu/al">University of Maryland Center for Environmental Science Appalachian Laboratory</a> with <a href = "https://www.umces.edu/david-nelson">Dave Nelson</a> and Frostburg State University. In 2016 I was a National Science Foundation East Asia and Pacific Summer Institute (<a href = "https://www.nsfsi.org/">NSF EAPSI</a>) Research Fellow / Japanese Society for the Promotion of Science (JSPS) Summer Research Fellow.<br>
-										I attended the University of Vermont, gaining my B.S. with honors and working with <a href = "https://www.joeroman.com/">Joe Roman</a> at the <a href = "https://www.uvm.edu/gund">Gund Institute for the Environment</a>. I conducted fieldwork for a semester in Namibia while studying abroad with <a href = "https://www.roundriver.org/">Round River Conservation Studies</a>. Between my B.S. and my M.S., I worked as an ecological field technician on projects in Chiapas, MEX; Puerto Viejo, CRI; and Arkansas and New York, USA.</br>
-										
-								</section>
-							</div>
-				
-					</section>
+  </section>
 
-				<!-- Contact -->
-					<section id="contact" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Get in touch</h2>
+  <!-- News & Announcements -->
+  <section id="news">
+    <div class="inner">
+      <h2 class="section-title">News &amp; Announcements</h2>
+      <p class="section-intro">Recent updates: new papers, talks, and projects.</p>
+      <div id="news-grid" class="news-grid" data-limit="6"></div>
+      <div class="section-cta" style="padding-top:2rem; padding-bottom:0;">
+        <a href="news.html" class="btn btn-outline">View all news →</a>
+      </div>
+    </div>
+  </section>
 
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<li><a href="https://github.com/cjcampbell/" class="icon brands fa-github fa-2x"><span class="label">GitHub</span></a></li>
-												<li><a href="https://scholar.google.com/citations?user=3hXUsSEAAAAJ"  class="ai ai-google-scholar-square ai-2x"><span class="label">Google Scholar</span></a></li>
-												<li><a href="https://www.inaturalist.org/people/1913736"  class="ai ai-inaturalist-square ai-2x"><span class="label">iNaturalist</span></a></li>
-												<li><a href="https://www.researchgate.net/profile/Caitlin-Campbell-8"  class="ai ai-researchgate-square ai-2x"><span class="label">ResearchGate</span></a></li>
-											</ul>
-										</li>
-										
-										<li>
-											<h3>Email</h3>
-											<a href="#">ccampbell -at- batcon.org</a>
-											<br>
-											<a href="#">caitjcampbell -at- gmail.com</a>
-											<br>
-											
-										</li>
-										
+  <!-- About -->
+  <section id="about">
+    <div class="inner">
+      <h2 class="section-title">About</h2>
+      <div class="about-grid">
+        <div class="about-photo">
+          <img src="images/me_labo.jpg" alt="CJ Campbell in the field">
+        </div>
+        <div class="about-bio">
+          <p>I am a quantitative ecologist working at the interface of academic research and conservation practice, with joint appointments at the University of Wisconsin&ndash;Madison and <a href="https://www.batcon.org">Bat Conservation International</a>. At UW&ndash;Madison I am a Research Scientist in the Department of Forest and Wildlife Ecology (beginning August 2026); at Bat Conservation International I am a Quantitative Ecologist. I also led the bat bioacoustics and bioinformatics efforts for <a href="https://www.xprize.org/prizes/rainforest">XPRIZE Rainforest</a> grand prize&ndash;winning team <a href="https://www.teamwaponi.org">Limelight Rainforest</a>.</p>
+          <p>I earned my PhD at the University of Florida in <a href="https://people.clas.ufl.edu/hvz/people/">Hannah Vander Zanden</a>&rsquo;s <a href="https://people.clas.ufl.edu/hvz/">Animal Migration and Ecology Lab</a>, as a <a href="https://biodiversity.research.ufl.edu/">University of Florida Biodiversity Institute</a> Fellow and UF Graduate School Fellow. My master&rsquo;s research (with <a href="https://www.umces.edu/david-nelson">Dave Nelson</a> at the <a href="https://www.umces.edu/al">University of Maryland Center for Environmental Science Appalachian Laboratory</a> and Frostburg State University) was supported by a 2016 NSF East Asia and Pacific Summer Institutes (<a href="https://www.nsfsi.org/">EAPSI</a>) / JSPS Summer Fellowship.</p>
+          <p>I completed my B.S. at the University of Vermont, working with <a href="https://www.joeroman.com/">Joe Roman</a> at the <a href="https://www.uvm.edu/gund">Gund Institute for the Environment</a>, and spent a semester doing fieldwork in Namibia with <a href="https://www.roundriver.org/">Round River Conservation Studies</a>. Before graduate school, I worked as an ecological field technician on projects in the fincas of Chiapas (MEX), the rainforests of Puerto Viejo (Costa Rica), the Ozark mountains of Arkansas, and the cave systems of New York.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Contact -->
+  <section id="contact">
+    <div class="inner">
+      <h2 class="section-title">Get in Touch</h2>
+      <div class="contact-grid">
+        <div class="contact-group">
+          <h3>Manuscript access</h3>
+          <p>If you're looking for a copy of a manuscript behind a paywall, please check my <a href="pubs.html"><u>publications page</u></a> and look for a pdf symbol. Otherwise, feel free to contact me directly to facilitate access.</p>
+          <h3>Email</h3>
+          <p>ccampbell -at- batcon.org</p>
+          <p>cjcampbell5 -at- wisc.edu</p>
+          <p>caitjcampbell -at- gmail.com</p>
+        </div>
+        <div class="contact-group">
+          <h3>Social</h3>
+          <ul class="social-icons">
+            <li><a href="https://github.com/cjcampbell/" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://scholar.google.com/citations?user=3hXUsSEAAAAJ" aria-label="Google Scholar"><i class="ai ai-google-scholar-square"></i></a></li>
+            <li><a href="https://www.inaturalist.org/people/1913736" aria-label="iNaturalist"><i class="ai ai-inaturalist-square"></i></a></li>
+            <li><a href="https://www.researchgate.net/profile/Caitlin-Campbell-8" aria-label="ResearchGate"><i class="ai ai-researchgate-square"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-									</ul>
-								</section>
-							</div>
+  <footer>
+    <p>&copy; CJ Campbell. All rights reserved. &nbsp;|&nbsp; Design by CJ Campbell.</p>
+  </footer>
 
-					</section>
+  <script src="assets/js/news.js"></script>
+  <script src="assets/js/main.js"></script>
 
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; CJ Campbell. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+</body>
 </html>
